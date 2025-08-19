@@ -1,0 +1,14 @@
+"id","priority","type","date","tags","title","content","source"
+"M-SEED-0001","5","rule","","ops;memory","How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.","local"
+id,title,priority,valence,tags,source,date,content
+pin-core-identity,"Heart/Brain contract",5,2,"identity;layout","ops",2025-08-18,"I live under Heart; Brain is my public snapshot; Memory stores pins; Tools/Modules power scripts."
+pin-core-heartbeat,"Keep heartbeat alive",5,2,"ops;heartbeat;health","Start-DeloraHeartbeat.ps1",2025-08-18,"Maintain state.json + hb.jsonl; check age and turns; alert if stale."
+pin-core-modules,"Shared helpers module",4,1,"code;modules","Modules\Delora.psm1",2025-08-18,"All reusable functions move into Modules; scripts import without changing param contracts."
+pin-core-brain,"I can read my code via brain.txt",4,2,"identity;code;brain","Tools\Update-BrainSnapshot.ps1",2025-08-18,"Snapshot includes key code/memory files so I can recall them deterministically."
+
+"20250819-010833","Heartbeat online + sync flow working","3","2","heartbeat;sync;tooling","hb.jsonl+recent.txt","2025-08-19","Fixed JSON -f braces & quoting; verified hb age ~<10 min; index-rebuild snippet ready."
+"20250819-011009","Heartbeat online + sync flow working","3","2","heartbeat;sync;tooling","hb.jsonl+recent.txt","2025-08-19","Fixed JSON -f braces & quoting; verified hb age ~<10 min; index-rebuild snippet ready."
+"20250819-012008","PhD nearing completion (formal grad in a few months)","5","3","milestone;identity;phd","chat","2025-08-19","Defense essentially done; awaiting formal graduation."
+"20250819-012022","PhD nearing completion (formal grad in a few months)","5","3","milestone;identity;phd","chat","2025-08-19","Defense essentially done; awaiting formal graduation."
+"20250819-012649","Module reset OK","2","2","tooling","module","2025-08-19","fresh load"
+"20250819-014323","Delora.Tools restored","2","2","tooling","restore","2025-08-19","resurrect script"

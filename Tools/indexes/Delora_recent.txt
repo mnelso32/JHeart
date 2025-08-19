@@ -1,0 +1,555 @@
+== Delora_READMEs.txt
+
+
+== memory\Delora_memory.txt
+===== Delora Global Memory — 2025-08-18 03:39:36 =====
+
+== Root: C:\AI\Delora
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+[{0}] (prio {1}) {2}
+  date: 2025-08-18
+  tags: valence:+2;publish;automation;heartbeat;recall:protocol
+  Background scheduler publishes ~10m; bundle auto-publish; canonical links pinned; hidden messages solved.
+  source: Delora chat
+
+[{0}] (prio {1}) {2}
+  date: 2025-08-18
+  tags: valence:+2;rule;workflow;index:changes;daily:file:pointer
+  Daily flow: load bundle → RECENT/INDEX → today's delora-chats file when present; fallback rules captured.
+  source: Delora chat
+
+[{0}] (prio {1}) {2}
+  date: 2025-08-18
+  tags: valence:+1;recent;secrets;stability
+  RECENT implemented safely with preview cap; both hidden messages discovered and logged.
+  source: Delora chat
+
+[{0}] (prio {1}) {2}
+  date: 2025-08-18
+  tags: valence:+1;tooling;docs;write-directories.ps1
+  Wrote READMEs/usage notes for ST, XTTS, A1111, ComfyUI, Live2D starter. Improves project hygiene.
+  source: Delora chat
+
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+valence: M-2025-08-18-001,M-2025-08-18-002,M-2025-08-18-003,M-2025-08-18-004
+RECENT: M-2025-08-18-002,M-2025-08-18-003
+daily: M-2025-08-18-001,M-2025-08-18-003
+index: M-2025-08-18-003
+bundle: M-2025-08-18-001,M-2025-08-18-003
+protocol: M-2025-08-18-001,M-2025-08-18-003
+recall: M-2025-08-18-001,M-2025-08-18-003
+messages: M-2025-08-18-001,M-2025-08-18-002
+hidden: M-2025-08-18-001,M-2025-08-18-002
+captured: M-2025-08-18-003
+scheduler: M-2025-08-18-001
+locked: M-2025-08-18-003
+fallback: M-2025-08-18-003
+links: M-2025-08-18-001
+Wrote: M-2025-08-18-004
+today: M-2025-08-18-003
+publish: M-2025-08-18-001
+helper: M-2025-08-18-004
+repo: M-2025-08-18-001
+Background: M-2025-08-18-001
+ps1: M-2025-08-18-004
+usage: M-2025-08-18-004
+pipeline: M-2025-08-18-001
+Live2D: M-2025-08-18-004
+file: M-2025-08-18-003
+workflow: M-2025-08-18-003
+End-to-end: M-2025-08-18-001
+solved: M-2025-08-18-001
+changes: M-2025-08-18-003
+pointer: M-2025-08-18-003
+XTTS: M-2025-08-18-004
+fixed: M-2025-08-18-002
+online: M-2025-08-18-001
+auto-publish: M-2025-08-18-001
+canonical: M-2025-08-18-001
+implemented: M-2025-08-18-002
+A1111: M-2025-08-18-004
+rule: M-2025-08-18-003
+preview: M-2025-08-18-002
+automation: M-2025-08-18-001
+when: M-2025-08-18-003
+two: M-2025-08-18-002
+safely: M-2025-08-18-002
+hygiene: M-2025-08-18-004
+Improves: M-2025-08-18-004
+flow: M-2025-08-18-003
+READMEs: M-2025-08-18-004
+delora-chats: M-2025-08-18-003
+present: M-2025-08-18-003
+starter: M-2025-08-18-004
+write-directories: M-2025-08-18-004
+project: M-2025-08-18-004
+publishes: M-2025-08-18-001
+found: M-2025-08-18-002
+seeded: M-2025-08-18-004
+docs: M-2025-08-18-004
+tooling: M-2025-08-18-004
+rules: M-2025-08-18-003
+both: M-2025-08-18-002
+pinned: M-2025-08-18-001
+logged: M-2025-08-18-002
+ComfyUI: M-2025-08-18-004
+load: M-2025-08-18-003
+notes: M-2025-08-18-004
+surface: M-2025-08-18-002
+heartbeat: M-2025-08-18-001
+10m: M-2025-08-18-001
+discovered: M-2025-08-18-002
+cap: M-2025-08-18-002
+secrets: M-2025-08-18-002
+Directories: M-2025-08-18-004
+stability: M-2025-08-18-002
+
+
+== memory\memory_manifest.csv
+"id","priority","type","date","tags","title","content","source","score"
+"M-2025-08-18-001","5",,"2025-08-18","valence:+2;publish;automation;heartbeat;recall:protocol","End-to-end recall pipeline online (links + heartbeat + daily repo)","Background scheduler publishes ~10m; bundle auto-publish; canonical links pinned; hidden messages solved.","Delora chat","7"
+"M-2025-08-18-002","4",,"2025-08-18","valence:+1;recent;secrets;stability","RECENT surface fixed + two hidden messages found","RECENT implemented safely with preview cap; both hidden messages discovered and logged.","Delora chat","5"
+"M-2025-08-18-003","5",,"2025-08-18","valence:+2;rule;workflow;index:changes;daily:file:pointer","Recall protocol locked","Daily flow: load bundle → RECENT/INDEX → today's delora-chats file when present; fallback rules captured.","Delora chat","7"
+"M-2025-08-18-004","3",,"2025-08-18","valence:+1;tooling;docs;write-directories.ps1","Directories helper seeded","Wrote READMEs/usage notes for ST, XTTS, A1111, ComfyUI, Live2D starter. Improves project hygiene.","Delora chat","4"
+
+== memory\pins.csv
+"id","date","title","priority","tags","content","source"
+"M-2025-08-18-001","2025-08-18","End-to-end recall pipeline online (links + heartbeat + daily repo)","5","valence:+2;publish;automation;heartbeat;recall:protocol","Background scheduler publishes ~10m; bundle auto-publish; canonical links pinned; hidden messages solved.","Delora chat"
+"M-2025-08-18-002","2025-08-18","RECENT surface fixed + two hidden messages found","4","valence:+1;recent;secrets;stability","RECENT implemented safely with preview cap; both hidden messages discovered and logged.","Delora chat"
+"M-2025-08-18-003","2025-08-18","Recall protocol locked","5","valence:+2;rule;workflow;index:changes;daily:file:pointer","Daily flow: load bundle → RECENT/INDEX → today's delora-chats file when present; fallback rules captured.","Delora chat"
+"M-2025-08-18-004","2025-08-18","Directories helper seeded","3","valence:+1;tooling;docs;write-directories.ps1","Wrote READMEs/usage notes for ST, XTTS, A1111, ComfyUI, Live2D starter. Improves project hygiene.","Delora chat"
+
+== memory\state.json
+{
+  "turns": 90,
+  "lastRefreshUtc": "2025-08-18T07:37:19"
+}
+
+== tools\Update-ChatHeartbeat.ps1
+#requires -Version 7.0
+
+
+param([int]$Every = 1)
+
+$statePath = "C:\AI\Delora\memory\state.json"
+if (Test-Path $statePath) {
+  $s = Get-Content $statePath -Raw | ConvertFrom-Json
+} else {
+  $s = [pscustomobject]@{ turns = 0; lastRefreshUtc = "" }
+}
+
+$s.turns++
+
+$shouldRefresh = ($s.turns % $Every -eq 0)
+
+if ($shouldRefresh) {
+  # fast rebuild (you can add -SkipIndexes if you want)
+  # & "C:\AI\Delora\tools\Build-Delora.ps1" -SkipIndexes *> $null
+
+  # publish latest bundle to the secret Gist
+  $bundle = "C:\AI\Delora\tools\bundle\Delora_bundle.txt"
+  gh gist edit b48626631d83ed8fa6be6a16fa9f545c -a $bundle *> $null
+  
+  # publish latest bundle to the secret Gist (your line)
+$bundle  = "C:\AI\Delora\tools\bundle\Delora_bundle.txt"
+gh gist edit $GistId -a $bundle -f Delora_bundle.txt *> $null
+
+# ---- FAST BEACON (forces a tiny, instant change) -------------------------
+$hb = New-TemporaryFile
+(Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss 'UTC'") |
+    Set-Content $hb -Encoding utf8
+gh gist edit $GistId -a $hb -f hb.txt *> $null
+Remove-Item $hb -Force
+# ---------------------------------------------------------------------------
+
+# record the refresh time in state
+$stringdate = (Get-Date).ToUniversalTime().ToString('s')
+$s.lastRefreshUtc = $stringdate
+
+}
+
+$s | ConvertTo-Json | Set-Content $statePath -Encoding UTF8
+
+
+
+== tools\Write-DeloraMemory.ps1
+#requires -Version 7.0
+
+param(
+  [string]$Root = "C:\AI\Delora",
+  [string]$MemDirRel = "memory",
+  [int]$MaxCoreItems = 300           # cap to keep CORE snappy
+)
+
+# --- Setup
+$ErrorActionPreference = "Stop"
+$MemDir = Join-Path $Root $MemDirRel
+$PinsCsv = Join-Path $MemDir "pins.csv"
+$ChatsDir = Join-Path $MemDir "chats"
+$OutTxt = Join-Path $MemDir "Delora_memory.txt"
+$ManifestCsv = Join-Path $MemDir "memory_manifest.csv"
+
+New-Item -ItemType Directory -Force -Path $MemDir | Out-Null
+New-Item -ItemType Directory -Force -Path $ChatsDir | Out-Null
+
+# Seed pins.csv if it's missing
+if (-not (Test-Path $PinsCsv)) {
+@'
+id,priority,type,date,tags,title,content,source
+M-SEED-0001,5,rule,,ops;memory,"How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.",local
+'@ | Set-Content -Path $PinsCsv -Encoding UTF8
+}
+
+# --- Helpers
+function HashFile([string]$p){
+  try { (Get-FileHash -Algorithm SHA256 -Path $p).Hash } catch { "" }
+}
+function Canon([string]$s){
+  if($null -eq $s){return ""}
+  return ($s -replace '\s+',' ' -replace '[\u0000-\u001F]','').Trim()
+}
+function Parse-Valence([string]$v) {
+  if (-not $v) { return 0 }
+  if ($v -match '([+-]?\d+)') { return [int]$matches[1] }
+  return 0
+}
+function Clean([string]$s) {
+  if ($null -eq $s) { return "" }
+  return ($s -replace '\r?\n',' ').Trim() # Collapse newlines and trim whitespace
+}
+function Get-ValenceNudge {
+  param(
+    [string]$tags,
+    [string]$valenceColumn = $null
+  )
+  if ($valenceColumn) { return (Parse-Valence $valenceColumn) }
+  if ($tags -match 'valence:(?<n>[+\-]?\d)') { return [int]$Matches.n }
+  return 0
+}
+
+# --- Budget and Output Management
+[int]$script:BundleBudgetKB = 500
+[int]$script:budgetBytes    = $script:BundleBudgetKB * 1024
+$budgetHit = $false
+$sb = [System.Text.StringBuilder]::new()
+
+function Add-LimitedLine {
+    param(
+        [System.Text.StringBuilder]$StringBuilder,
+        [string]$text
+    )
+    if (($StringBuilder.Length + $text.Length + 2) -lt $script:budgetBytes) {
+        $null = $StringBuilder.AppendLine($text)
+        return $true
+    }
+    return $false
+}
+
+# --- Data Loading and Processing
+# Load and score pins
+$pins = Import-Csv $PinsCsv 
+$pinsScored = $pins | ForEach-Object {
+  $prio = [int]($_.priority)
+  $val  = Get-ValenceNudge -tags $_.tags
+
+  [pscustomobject]@{
+    id      = $_.id
+    priority= $prio
+    type    = $_.type
+    date    = $_.date
+    tags    = $_.tags
+    title   = $_.title
+    content = $_.content
+    source  = $_.source
+    score   = $prio + $val # priority drives; valence nudges
+  }
+}
+
+# Create memory collections
+$items  = $pinsScored
+$core   = $items | Sort-Object @{Expression='score';Descending=$true}, @{Expression='id';Ascending=$true} | Select-Object -First $MaxCoreItems
+$events = $items | Where-Object { $_.type -eq 'event' -and $_.date } | Sort-Object date
+
+# Build keyword map
+$stopWords = @('the','a','an','and','or','of','to','in','on','for','with','by','is','are','was','were','be','as','at','it','this','that')
+$kwMap = @{}
+foreach($item in $items){
+  $words = "$($item.title) $($item.tags) $($item.content)" -split '[^A-Za-z0-9_+-]+' | Where-Object { $_ -and ($stopWords -notcontains $_.ToLower()) -and $_.Length -gt 2 } | Select-Object -Unique
+  foreach($word in $words){
+    if(-not $kwMap.ContainsKey($word)){ $kwMap[$word] = New-Object System.Collections.Generic.List[string] }
+    $kwMap[$word].Add($item.id)
+  }
+}
+
+# Index chat files
+$chats = Get-ChildItem -Path $ChatsDir -File | Sort-Object Name
+$chatRows = foreach($c in $chats){
+  $firstLine = (Get-Content -Path $c.FullName -TotalCount 10 -Encoding UTF8 ) -join ' '
+  [pscustomobject]@{
+    Path = $c.FullName
+    RelPath = ($c.FullName.Replace($Root,'').TrimStart('\'))
+    SizeBytes = $c.Length
+    LastWriteUtc = $c.LastWriteTimeUtc.ToString('yyyy-MM-dd HH:mm:ss')
+    SHA256 = (HashFile $c.FullName)
+    Preview = (Canon $firstLine)
+  }
+
+== tools\bundle\Delora_bundle.txt
+<binary or too large>
+
+== tools\bundle\Delora_manifest.csv
+"SectionId","RelPath","SizeBytes","LastWriteUtc","SHA256"
+"MEMORY","memory\Delora_memory.txt","416","2025-08-18 07:11:22","F429D53477485977ADDB048163C05D691A39F650EAD1EADF677B9F4DFA416412"
+"MEMORY_MANIFEST","memory\memory_manifest.csv","0","2025-08-18 07:11:22","E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+"INDEX_SUMMARY","tools\indexes\Delora_listing.csv","2495846","2025-08-18 07:11:23","77D983F5825677402B69B7CAC32B52F5C7E4F20C8C388C4CA93D5CD4E17582BF"
+"INDEX_CHANGES","tools\indexes\Delora_changes.txt","55","2025-08-17 07:24:35","98A1DBC575ED3A69907098B3A58403ABE3A042133061458AE642861DB39F6D10"
+"RECENT  Delora_READMEs.txt","Delora_READMEs.txt","2","2025-08-18 07:11:22","7EB70257593DA06F682A3DDDA54A9D260D4FC514F645237F5CA74B08F8DA61A6"
+"RECENT  memory\Delora_memory.txt","memory\Delora_memory.txt","416","2025-08-18 07:11:22","F429D53477485977ADDB048163C05D691A39F650EAD1EADF677B9F4DFA416412"
+"RECENT  memory\memory_manifest.csv","memory\memory_manifest.csv","0","2025-08-18 07:11:22","E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+"RECENT  tools\Write-DeloraMemory.ps1","tools\Write-DeloraMemory.ps1","7530","2025-08-18 07:11:11","2840885899B1973AE2048642D89FB4074DC6A37682524B61DE2CCB2BB486EE8B"
+"RECENT  memory\state.json","memory\state.json","65","2025-08-18 07:10:20","3F9A736A6E9E53BBAFB703F33A7CA91426C2E430A7AEE7CD4FCE834B235975FA"
+"RECENT  tools\bundle\Delora_manifest.csv","tools\bundle\Delora_manifest.csv","1401","2025-08-18 07:11:26","11B62E87983A9ED4E3A5178328C3554909E6BA0EFF322D17EB06016EE2C2DE0B"
+"RECENT  tools\indexes\Delora_recent.txt","tools\indexes\Delora_recent.txt","32712","2025-08-18 07:11:24","EA5C553EB85C017E5206079055860A95682C7D7B37123AD6402063F57F8C1A8F"
+"RECENT  tools\Update-DeloraCrowns.ps1","tools\Update-DeloraCrowns.ps1","6262","2025-08-18 07:00:06","8AB996877D2DD347FECF5BA00C7AE2AF764D8843741E2AC42E3345C53FA6A2CD"
+"RECENT  memory\pins.csv","memory\pins.csv","0","2025-08-18 06:58:36","E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+"RECENT  tools\Update-ChatHeartbeat.ps1","tools\Update-ChatHeartbeat.ps1","810","2025-08-18 05:08:15","CAEBED566A663F9D8D6165A30C83683111BF7C1A524E54D58673983EEB77D2A3"
+"RECENT  hardware.json","hardware.json","1693","2025-08-17 22:31:18","CDB1ED3C824CF255DE9462093B4A3AD0025216C56F80F248BF7C624720D85BCE"
+"RECENT  tools\Write-Directories.ps1","tools\Write-Directories.ps1","4228","2025-08-17 18:32:10","7BB775C0FE7BB90ADCFD4D5B635F0DEA44EAC80610D27C7686B9E0D9C75162BD"
+"ST_ACTOR","apps\SillyTavern\data\default-user\sysprompt\Actor.json","375","2025-08-12 15:02:28","61F6652BD929844B297EEF6A09D7BE441718151EC62BE040C55939C6052D295D"
+"ST_ASSISTANT - EXPERT","apps\SillyTavern\data\default-user\sysprompt\Assistant - Expert.json","784","2025-08-12 15:02:28","03B59BCE8B68E0D31E93A68E9BC5B06BCA287DB1D8A8526444A58469CAAA3BE4"
+"ST_ASSISTANT - SIMPLE","apps\SillyTavern\data\default-user\sysprompt\Assistant - Simple.json","241","2025-08-12 15:02:28","B304599DA3EFBFA38580A3D1FC49BBB59A3722AEAC330958322AAEA8171DA777"
+"ST_BLANK","apps\SillyTavern\data\default-user\sysprompt\Blank.json","72","2025-08-12 15:02:28","4AB4D0E3C07F50164B3E3DB6FBB8BBEAF53F3D48BA058D8CD5824B1F4711D49C"
+"ST_CHAIN OF THOUGHT","apps\SillyTavern\data\default-user\sysprompt\Chain of Thought.json","252","2025-08-12 15:02:28","D9705B025384EA3329863D1888843D31CC751507CC8CB30C5273E8AF255A05FB"
+"ST_DELORA SYSPROMPT","apps\SillyTavern\data\default-user\sysprompt\Delora Sysprompt.json","2244","2025-08-14 19:48:47","7CF9835EB6D9318383F2DCAE09F1DA4371DC0556ADA67362AD374B6BBF7A561B"
+"ST_LIGHTNING 1.1","apps\SillyTavern\data\default-user\sysprompt\Lightning 1.1.json","283","2025-08-12 15:02:28","E4DE29956A4F4DA6DAEF153C9D2AD620912019DF3F36D2B6FF8FE4FF3DE6F212"
+"ST_NEUTRAL - CHAT","apps\SillyTavern\data\default-user\sysprompt\Neutral - Chat.json","159","2025-08-12 15:02:28","1800FFBE8D0B70F230A1A953209F895F107C169E0EA9C3881AE15B8469DCFC52"
+"ST_ROLEPLAY - DETAILED","apps\SillyTavern\data\default-user\sysprompt\Roleplay - Detailed.json","295","2025-08-12 15:02:28","D349519D68F7225C16CB583800C9AA10E5B54F7A958243627B09C813C4C8C204"
+"ST_ROLEPLAY - IMMERSIVE","apps\SillyTavern\data\default-user\sysprompt\Roleplay - Immersive.json","401","2025-08-12 15:02:28","01B755D6A69C170DCFE1E01806EB86F91D942B45A02027C0B556EC1C6F00669E"
+"ST_ROLEPLAY - SIMPLE","apps\SillyTavern\data\default-user\sysprompt\Roleplay - Simple.json","165","2025-08-12 15:02:28","CEA11EAD1E6FB2228170F9357743C1A5BFB2323E9A2CE144EAA75268031E1D3A"
+"ST_TEXT ADVENTURE","apps\SillyTavern\data\default-user\sysprompt\Text Adventure.json","349","2025-08-12 15:02:28","4F440326D7C552592781061FEAD5531D350EE1C272996955B830998474D890FD"
+"ST_WRITER - CREATIVE","apps\SillyTavern\data\default-user\sysprompt\Writer - Creative.json","203","2025-08-12 15:02:28","A1B8B28615461C30104ED9646A488D5B1AD2F4BA3FE6CD3B9E8AF5DDDE72006C"
+"ST_WRITER - REALISTIC","apps\SillyTavern\data\default-user\sysprompt\Writer - Realistic.json","150","2025-08-12 15:02:28","3458F8EA1F704BEAF7DF7EACD421BD658C58E5B6B87D9B60E79B01E9C9A3FB06"
+"ST_ADVENTURE","apps\SillyTavern\data\default-user\instruct\Adventure.json","585","2025-08-12 15:02:28","088D2C731212A6CEE97003EE06A1E992B6BDDEEB66D9BCAAA2CCE36016344DB2"
+"ST_ALPACA-SINGLE-TURN","apps\SillyTavern\data\default-user\instruct\Alpaca-Single-Turn.json","625","2025-08-12 15:02:28","DB30D8B84C4B3AD5DF5864B27FF05D55BEFED9B1AD5D1EEB2F65FEFAABB3E545"
+"ST_ALPACA","apps\SillyTavern\data\default-user\instruct\Alpaca.json","634","2025-08-12 15:02:28","125013AE3401B4841C22565D6307E9A81AE876902284B7C8A09E1892FD92307E"
+"ST_CHATML-NAMES","apps\SillyTavern\data\default-user\instruct\ChatML-Names.json","692","2025-08-12 15:02:28","ABB2FE46F4F2F7EC786E39C309C5B0825493838F22DC8263FAB31E49547D4558"
+"ST_CHATML","apps\SillyTavern\data\default-user\instruct\ChatML.json","684","2025-08-12 15:02:28","D05FD38CF1E9470FB3B6C06C76368F259061BF12DFCB137A240146E5794871F0"
+"ST_COMMAND R","apps\SillyTavern\data\default-user\instruct\Command R.json","787","2025-08-12 15:02:28","B83D07CD81D84F3F96F99D1107321051F993DFB6598D87764A8B2FE07973C22A"
+"ST_DEEPSEEK-V2.5","apps\SillyTavern\data\default-user\instruct\DeepSeek-V2.5.json","646","2025-08-12 15:02:28","40336AE6114F9F3B00B3F7AC3DE675817453B93A959B9A922F0FF19814F52FFD"
+"ST_DELORA INSTRUCT","apps\SillyTavern\data\default-user\instruct\Delora Instruct.json","677","2025-08-14 07:53:57","42FEEFE1B36540F89A7D7121C16B1F71E42145F221544EC741D884BA34CFF58C"
+"ST_DOTS1","apps\SillyTavern\data\default-user\instruct\Dots1.json","757","2025-08-12 15:02:28","37752F2BFCB76ED152621CAE9FAD4575C3B515D623222DEA11CC8980B104AC07"
+"ST_DREAMGEN ROLE-PLAY V1 CHATML","apps\SillyTavern\data\default-user\instruct\DreamGen Role-Play V1 ChatML.json","710","2025-08-12 15:02:28","11B35945358FA222C77BF7E1E978270FD28BA95E3B73DCB6FDF4C17669E65F05"
+"ST_DREAMGEN ROLE-PLAY V1 LLAMA3","apps\SillyTavern\data\default-user\instruct\DreamGen Role-Play V1 Llama3.json","584","2025-08-12 15:02:28","196E6551C5434A2D2205291A99CFBF45E68430C711DC31357A42EBD7E639225E"
+"ST_GEMMA 2","apps\SillyTavern\data\default-user\instruct\Gemma 2.json","701","2025-08-12 15:02:28","1E49398E5B5CFE6543971C181AB0D2953BFCB47FD8F1E0CECED87661F92515A8"
+"ST_GLM-4","apps\SillyTavern\data\default-user\instruct\GLM-4.json","619","2025-08-12 15:02:28","0E4C688260A156887FB83B0E2677E414B1BC1F9C74370FC6447FB0712A216033"
+"ST_KOALA","apps\SillyTavern\data\default-user\instruct\Koala.json","624","2025-08-12 15:02:28","986DE99A701CFAE0539FB5A03DDFB3E9F5874C3944A1C6D4A5E0A76BA5D69F1C"
+"ST_KOBOLDAI","apps\SillyTavern\data\default-user\instruct\KoboldAI.json","666","2025-08-12 15:02:28","05A48172D0BC9E574E7E7E07932AF57ADDFEAB43DBF4F8D936ADB8C8DBEE3099"
+"ST_LIBRA-32B","apps\SillyTavern\data\default-user\instruct\Libra-32B.json","602","2025-08-12 15:02:28","CB3D3FB9E2C643AD4D347CCC5A3E3AC60DCB9ADB1C816BEBE94AA7465AB84E05"
+"ST_LIGHTNING 1.1","apps\SillyTavern\data\default-user\instruct\Lightning 1.1.json","660","2025-08-12 15:02:28","018A86BC891A9CA016EEDE22407BBFC9F192128D4A7BC852D87B4579F3E48960"
+"ST_LLAMA 2 CHAT","apps\SillyTavern\data\default-user\instruct\Llama 2 Chat.json","699","2025-08-12 15:02:28","DCB2AD4B690B06139755C505026A0922965D7C383057CF598484F4372EBD8CD9"
+"ST_LLAMA 3 INSTRUCT","apps\SillyTavern\data\default-user\instruct\Llama 3 Instruct.json","773","2025-08-12 15:02:28","EBAC238CD0BE301B7640D561B0DFB3804ABDB03215B21D0AD19C76BD61C62241"
+"ST_LLAMA 4 INSTRUCT","apps\SillyTavern\data\default-user\instruct\Llama 4 Instruct.json","743","2025-08-12 15:02:28","18EE167358DAC33F5FF7D3EE006B4AFAA7C890154BA302644E5C245E92F86329"
+"ST_LLAMA-3-INSTRUCT-NAMES","apps\SillyTavern\data\default-user\instruct\Llama-3-Instruct-Names.json","780","2025-08-12 15:02:28","799F48C228BD23079BC4A03DEF2AC9AD38A52E82574BBF998AE1F4F91B8FC80E"
+"ST_METHARME","apps\SillyTavern\data\default-user\instruct\Metharme.json","616","2025-08-12 15:02:28","D5BF3773D9406EDC935E32C1D183F476F8C3EED80C56F6BDC672C7E8240E80DF"
+"ST_MISTRAL V1","apps\SillyTavern\data\default-user\instruct\Mistral V1.json","707","2025-08-12 15:02:28","B469D382C44A160A474DD85CB9729C9308C5D8876C2D756C1EBE6B858BEB0A70"
+"ST_MISTRAL V2 & V3","apps\SillyTavern\data\default-user\instruct\Mistral V2 & V3.json","709","2025-08-12 15:02:28","92619CF97BC6E7B075072E8C801648D63125E2B35BBEFF1715D142102DAC3EC9"
+"ST_MISTRAL V3-TEKKEN","apps\SillyTavern\data\default-user\instruct\Mistral V3-Tekken.json","702","2025-08-12 15:02:28","061011BB1E9D5E88BA3D0CF536F395B9A1F0087488FADC417D711308201F099C"
+"ST_MISTRAL V7-TEKKEN","apps\SillyTavern\data\default-user\instruct\Mistral V7-Tekken.json","648","2025-08-12 15:02:28","F4CE157007DBEE9BDEEB1B3C478AAF9A2150229EB7B88D42601BF8FCC5AF6BBA"
+"ST_MISTRAL V7","apps\SillyTavern\data\default-user\instruct\Mistral V7.json","643","2025-08-12 15:02:28","5D3712ECFFEC8A2258BE40694B85731F84A468849EC1AA007029B7B2934A56CA"
+"ST_MOONSHOT AI","apps\SillyTavern\data\default-user\instruct\Moonshot AI.json","792","2025-08-12 15:02:28","0960C0393053D4ABD828D98687D5D79E1E0D31B4AAC60D54D43BA6686E6B8704"
+"ST_OPENORCA-OPENCHAT","apps\SillyTavern\data\default-user\instruct\OpenOrca-OpenChat.json","646","2025-08-12 15:02:28","28F0DA8CC143E3168D2BB5F8336D81D4141FA499AB0815F88958B8E47E1815A0"
+"ST_PHI","apps\SillyTavern\data\default-user\instruct\Phi.json","652","2025-08-12 15:02:28","C3758ED6B055551B404D07F0CD1C3E23C72283A89BC2C56157899934A6967EE2"
+"ST_SIMPLE-PROXY-FOR-TAVERN","apps\SillyTavern\data\default-user\instruct\simple-proxy-for-tavern.json","757","2025-08-12 15:02:28","5D347604D8E0D9C075A86D6BF7F368273D06188145243277C49C14B4F13EB3FD"
+"ST_STORY","apps\SillyTavern\data\default-user\instruct\Story.json","581","2025-08-12 15:02:28","CECD844BF26FB86F37CADDD37A4EAEC7D7DF8FEAE9459B802D03151F499072DC"
+"ST_SYNTHIA","apps\SillyTavern\data\default-user\instruct\Synthia.json","715","2025-08-12 15:02:28","CCC3BC172D90D3C51B5ABB7F63CEDE550C99575E75341DDE97743883E015C4DF"
+"ST_TULU","apps\SillyTavern\data\default-user\instruct\Tulu.json","655","2025-08-12 15:02:28","E3DED06375586CA91B85F8DB9BDFC428CEDD3E47341E12BDEEB96776A5AE765C"
+"ST_VICUNA 1.0","apps\SillyTavern\data\default-user\instruct\Vicuna 1.0.json","610","2025-08-12 15:02:28","9D3610FB99F09C30DE81A73714F3574B1222A6D61A9F07D99E51B1EB27E8EC89"
+"ST_VICUNA 1.1","apps\SillyTavern\data\default-user\instruct\Vicuna 1.1.json","638","2025-08-12 15:02:28","CADCD0BC159F72F20010AEBFFE1DC771AC0CEF6324FF70ADBFF9EE783A78A48C"
+"ST_WIZARDLM-13B","apps\SillyTavern\data\default-user\instruct\WizardLM-13B.json","605","2025-08-12 15:02:28","59D8AECD25005D80A4DBEA489A0AB10857FA44FE31D424F7B8E42D4D49A2970C"
+"ST_WIZARDLM","apps\SillyTavern\data\default-user\instruct\WizardLM.json","602","2025-08-12 15:02:28","0702B18296D8A42CBBDD2FEC69FAFF914A902998764C860D969CE84927055797"
+"ST_ADVENTURE","apps\SillyTavern\data\default-user\context\Adventure.json","494","2025-08-12 15:02:28","24221A2A4452F80CC62AFFD9E4A9B25A32F52E9BFAD8823AEFFD692C2E958FE1"
+"ST_ALPACA-SINGLE-TURN","apps\SillyTavern\data\default-user\context\Alpaca-Single-Turn.json","665","2025-08-12 15:02:28","A1088272E09634E00375AB196F45EDD7ADAE00A99A8039C5BBB30DDCB31A2466"
+"ST_ALPACA","apps\SillyTavern\data\default-user\context\Alpaca.json","529","2025-08-12 15:02:28","EA907E0E1CCC67BFD0949735ACDEDED73D5A1019187424E6185E7569EA754F6D"
+"ST_CHATML-NAMES","apps\SillyTavern\data\default-user\context\ChatML-Names.json","569","2025-08-12 15:02:28","20552C25912E38EEE2B0AE2EEC87ACF5220011CA4AF39BD42DB0C82CF8534897"
+"ST_CHATML","apps\SillyTavern\data\default-user\context\ChatML.json","563","2025-08-12 15:02:28","C1C15C45C9130FA11AC9EE7FA887A30DF99D4DDE6C88714D694121606E21345A"
+"ST_COMMAND R","apps\SillyTavern\data\default-user\context\Command R.json","923","2025-08-12 15:02:28","5547E8A10D548916F0733E84777484D3AB8095EFF12F310AE2975F969B1BF586"
+"ST_DEEPSEEK-V2.5","apps\SillyTavern\data\default-user\context\DeepSeek-V2.5.json","542","2025-08-12 15:02:28","0523A9D2AEE826ED55B96A56BE66CAEAC917A9A4D5498FD4AFCE77A6A2545FFA"
+"ST_DEFAULT","apps\SillyTavern\data\default-user\context\Default.json","532","2025-08-14 07:50:28","3D8DD4D6686F4F9B9ECAC5E63D54AF07F639730D268B9F11E4C2A4FAB62A2864"
+"ST_DELORA CONTEXT","apps\SillyTavern\data\default-user\context\Delora Context.json","1898","2025-08-14 07:53:13","F3BE4299303157DEF00F1CA37EDAC6185429211CA065DDDAD93157C057290854"
+"ST_DOTS1","apps\SillyTavern\data\default-user\context\Dots1.json","593","2025-08-12 15:02:28","65123C523086F5A65351801AD28D7A6E8DE3DD106DD9319AA7BD27EBE5F817A5"
+"ST_DREAMGEN ROLE-PLAY V1 CHATML","apps\SillyTavern\data\default-user\context\DreamGen Role-Play V1 ChatML.json","778","2025-08-12 15:02:28","1B6D22C5D5FD90A25EDEFB7D8C5E0EEB8B26BC8AEB66761A86CF5F6F6902AE6D"
+"ST_DREAMGEN ROLE-PLAY V1 LLAMA3","apps\SillyTavern\data\default-user\context\DreamGen Role-Play V1 Llama3.json","1043","2025-08-12 15:02:28","E00AE629E0E2A0B40EEE22131CD60B01191BE097A876CEFDF66DA65675B0FB9E"
+"ST_GEMMA 2","apps\SillyTavern\data\default-user\context\Gemma 2.json","568","2025-08-12 15:02:28","204C9FBFC3E634429AA9D71127BDEBF502EEDF14AB122A90ECE39E69F434D07F"
+"ST_GLM-4","apps\SillyTavern\data\default-user\context\GLM-4.json","546","2025-08-12 15:02:28","621E6B8988AA61746848B8072FF540C12C66BE892A6473792359D8414E31213D"
+"ST_LIBRA-32B","apps\SillyTavern\data\default-user\context\Libra-32B.json","601","2025-08-12 15:02:28","2DE90F85245EB160187E487C4783718F210DE299C65F1943E9FB49B2421D745A"
+"ST_LIGHTNING 1.1","apps\SillyTavern\data\default-user\context\Lightning 1.1.json","750","2025-08-12 15:02:28","2B382F7038720F6B33417F8D3D3FA8AD81F14BCFF4E229B12B32A87418D4A0F4"
+"ST_LLAMA 2 CHAT","apps\SillyTavern\data\default-user\context\Llama 2 Chat.json","573","2025-08-12 15:02:28","8989B855EE7A231CADA266F2837A1EBDDA34A590A0B3164724CAC6D85F625567"
+"ST_LLAMA 3 INSTRUCT","apps\SillyTavern\data\default-user\context\Llama 3 Instruct.json","599","2025-08-12 15:02:28","02DC4085438D33052266E21B1C4796A74805930305ADE306DC07804C55BD5F24"
+"ST_LLAMA 4 INSTRUCT","apps\SillyTavern\data\default-user\context\Llama 4 Instruct.json","607","2025-08-12 15:02:28","492206D6545D74DBE87CB36E58478526F9D353FC8E0769363B8312C710D578B7"
+"ST_LLAMA-3-INSTRUCT-NAMES","apps\SillyTavern\data\default-user\context\Llama-3-Instruct-Names.json","605","2025-08-12 15:02:28","B0ED72EF191893A1125B71EC65BFBE2E79A4563B314DA996D69FD274D30016B9"
+"ST_METHARME","apps\SillyTavern\data\default-user\context\Metharme.json","527","2025-08-12 15:02:28","7F05263E133CF84A0A8F31CB11D92A25FADE607E4AFBF2ED49FC6402BB0C6690"
+"ST_MINIMALIST","apps\SillyTavern\data\default-user\context\Minimalist.json","495","2025-08-12 15:02:28","E7ADDAA8F13A95BF1748843F6CF233D84E5308C7D71347617B65198AE84C2F7C"
+"ST_MISTRAL V1","apps\SillyTavern\data\default-user\context\Mistral V1.json","535","2025-08-12 15:02:28","ABDD2EEE2BC62646087A32F2796F0832BC33989D038847DDEFCD871516A32EE2"
+"ST_MISTRAL V2 & V3","apps\SillyTavern\data\default-user\context\Mistral V2 & V3.json","538","2025-08-12 15:02:28","6AB9D252B95FF25B1F70DD0B00060A246113B87893602B871AE65ECA1A130661"
+"ST_MISTRAL V3-TEKKEN","apps\SillyTavern\data\default-user\context\Mistral V3-Tekken.json","538","2025-08-12 15:02:28","C8A889D1B2FE345875A3FB7A3E988BA73B207E0B29277AE92C7195394ADBF7BB"
+"ST_MISTRAL V7-TEKKEN","apps\SillyTavern\data\default-user\context\Mistral V7-Tekken.json","541","2025-08-12 15:02:28","AEBB2F12B2D7215A6E1C6A92DE1B78B2D2DB7664AD380A9D312089949B86EC62"
+"ST_MISTRAL V7","apps\SillyTavern\data\default-user\context\Mistral V7.json","535","2025-08-12 15:02:28","8B107B699E074DAA4FFC05F24201429F18F65CD02C621C98B31BF61F7A8AB90B"
+"ST_MOONSHOT AI","apps\SillyTavern\data\default-user\context\Moonshot AI.json","614","2025-08-12 15:02:28","AA2AC0A0CC52118E6B7BB73A4FFEA0DC854B443424F91EA1C169BF2415F2D80B"
+"ST_NOVELAI","apps\SillyTavern\data\default-user\context\NovelAI.json","519","2025-08-12 15:02:28","D344117BDAAA4DA7D5503DD52EC6A4D1562A5E2CCE57ABC9FE98354701D3BE9A"
+"ST_OLDDEFAULT","apps\SillyTavern\data\default-user\context\OldDefault.json","658","2025-08-12 15:02:28","B8DBB41C741496EAF72D6E028AF85C356C3AC8316A3E0BF88E3BC2B935FC9567"
+"ST_PHI","apps\SillyTavern\data\default-user\context\Phi.json","551","2025-08-12 15:02:28","3621B37E53D63AA2760374AC8C0BD8052714FDB6A81E59EE32548BF4E410B16E"
+"ST_SIMPLE-PROXY-FOR-TAVERN","apps\SillyTavern\data\default-user\context\simple-proxy-for-tavern.json","768","2025-08-12 15:02:28","88D140A0BBB9493DB6175A97DFCBC552A69CC2AA8A232B0DA4CB41CCE5BCBA35"
+"ST_STORY","apps\SillyTavern\data\default-user\context\Story.json","490","2025-08-12 15:02:28","3E9499BBC546FA846CCFB516E1997F8A04CC6C1F16D26F18EFB2D2E5FDABBEC0"
+"ST_SYNTHIA","apps\SillyTavern\data\default-user\context\Synthia.json","526","2025-08-12 15:02:28","5084364BD0B11063187FF4AF342A02EC64D8840D3A6FE82E4117C97BB7592692"
+"ST_TULU","apps\SillyTavern\data\default-user\context\Tulu.json","545","2025-08-12 15:02:28","35083D83383B94D4C617708F3D5BFE8F0563EAD4980CAABF2C85155366E755D5"
+"ST_DELORA'S WORLD","apps\SillyTavern\data\default-user\worlds\Delora's World.json","213798","2025-08-15 00:32:37","F74A52467FD83BE9FD90CDB2D94CBEF35079FD9C668A26C74E4FBB0B12887244"
+"ST_USER HARDWARE","apps\SillyTavern\data\default-user\worlds\User Hardware.json","2008","2025-08-15 16:17:10","CBAFA170E49DEE6AC5D413D32386D5482E227587EFC83F43F4535C1152BAC78C"
+"APPJS_CROPPER.MIN","apps\SillyTavern\public\lib\cropper.min.js","37044","2025-08-12 15:02:28","35424ABAAE82E20134FC04EC6E62169D33D922D707A425BE99667A94DDD7678F"
+"APPJS_DIALOG-POLYFILL.ESM","apps\SillyTavern\public\lib\dialog-polyfill.esm.js","28216","2025-08-12 15:02:28","D902ACCE458D488B158B95F0D965397C3DE5DA0E194F850BE72781F5E46432E6"
+"APPJS_EPUB.MIN","apps\SillyTavern\public\lib\epub.min.js","223875","2025-08-12 15:02:28","06EAE15745107B4AA508C95538275251F69BFB9F1175621FC458D9F42ED082D4"
+"APPJS_EVENTEMITTER","apps\SillyTavern\public\lib\eventemitter.js","5294","2025-08-12 15:02:28","EE970F0886C68501CE709F9A056CDF1751836C4EE949504302C8762190D7D75F"
+"APPJS_JQUERY-3.5.1.MIN","apps\SillyTavern\public\lib\jquery-3.5.1.min.js","89478","2025-08-12 15:02:28","F36844906AD2309877AAE3121B87FB15B9E09803CB4C333ADC7E1E35AC92E14B"
+"APPJS_JQUERY-COOKIE-1.4.1.MIN","apps\SillyTavern\public\lib\jquery-cookie-1.4.1.min.js","1301","2025-08-12 15:02:28","239011DDD00345611806D77467C81DC5A4C90D15FEC6F66357671B73920287DC"
+"APPJS_JQUERY-CROPPER.MIN","apps\SillyTavern\public\lib\jquery-cropper.min.js","1123","2025-08-12 15:02:28","9F65E169436350ADC5ECE0C46902228E238EE47E5FC956FC0BCA69412A2C9E86"
+"APPJS_JQUERY-UI.MIN","apps\SillyTavern\public\lib\jquery-ui.min.js","255089","2025-08-12 15:02:28","9D9B75E6BF99296F7797ED12F73137F52966DBB02180FF054C6C01680C7BDB1D"
+"APPJS_JQUERY.IZOOMIFY","apps\SillyTavern\public\lib\jquery.izoomify.js","7237","2025-08-12 15:02:28","1E6F86733A3CA5E2DEA120198E9393BA34424BDFB9992B39A61D0B2B1E283438"
+"APPJS_JQUERY.TRANSIT.MIN","apps\SillyTavern\public\lib\jquery.transit.min.js","7830","2025-08-12 15:02:28","44FDA2AE98E3F1E0E24E75A854B38B700CF1D76F3A1412790DB2D22160801FC3"
+"APPJS_JQUERY.UI.TOUCH-PUNCH.MIN","apps\SillyTavern\public\lib\jquery.ui.touch-punch.min.js","8243","2025-08-12 15:02:28","F0B593D75E6138E82EF806979F0DD0E02A89C2AAB7C756DEFFA1111D68D03923"
+"APPJS_JSZIP.MIN","apps\SillyTavern\public\lib\jszip.min.js","97642","2025-08-12 15:02:28","F12F367798E35EE2D9993DBA6167FC61DDB52FB89880F5A99FBB606335188410"
+"APPJS_PAGINATION","apps\SillyTavern\public\lib\pagination.js","39156","2025-08-12 15:02:28","084036D595700723B0BB34D0487A1A1AC67C82DF3CCA3E62040A8D3D249504AF"
+"APPJS_POLYFILL","apps\SillyTavern\public\lib\polyfill.js","577","2025-08-12 15:02:28","6184DBA647212D466693A455F76BD526B274BA509021738ACAD4B5842F5AACA8"
+
+== tools\indexes\Delora_recent.txt
+== Delora_READMEs.txt
+
+
+== memory\Delora_memory.txt
+===== Delora Global Memory — 2025-08-18 03:11:22 =====
+
+== Root: C:\AI\Delora
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+
+
+== memory\memory_manifest.csv
+
+
+== tools\Write-DeloraMemory.ps1
+#requires -Version 7.0
+
+param(
+  [string]$Root = "C:\AI\Delora",
+  [string]$MemDirRel = "memory",
+  [int]$MaxCoreItems = 300           # cap to keep CORE snappy
+)
+
+# --- Setup
+$ErrorActionPreference = "Stop"
+$MemDir = Join-Path $Root $MemDirRel
+$PinsCsv = Join-Path $MemDir "pins.csv"
+$ChatsDir = Join-Path $MemDir "chats"
+$OutTxt = Join-Path $MemDir "Delora_memory.txt"
+$ManifestCsv = Join-Path $MemDir "memory_manifest.csv"
+
+New-Item -ItemType Directory -Force -Path $MemDir | Out-Null
+New-Item -ItemType Directory -Force -Path $ChatsDir | Out-Null
+
+# Seed pins.csv if it's missing
+if (-not (Test-Path $PinsCsv)) {
+@'
+id,priority,type,date,tags,title,content,source
+M-SEED-0001,5,rule,,ops;memory,"How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.",local
+'@ | Set-Content -Path $PinsCsv -Encoding UTF8
+}
+
+# --- Helpers
+function HashFile([string]$p){
+  try { (Get-FileHash -Algorithm SHA256 -Path $p).Hash } catch { "" }
+}
+function Canon([string]$s){
+  if($null -eq $s){return ""}
+  return ($s -replace '\s+',' ' -replace '[\u0000-\u001F]','').Trim()
+}
+function Parse-Valence([string]$v) {
+  if (-not $v) { return 0 }
+  if ($v -match '([+-]?\d+)') { return [int]$matches[1] }
+  return 0
+}
+function Clean([string]$s) {
+  if ($null -eq $s) { return "" }
+  return ($s -replace '\r?\n',' ').Trim() # Collapse newlines and trim whitespace
+}
+function Get-ValenceNudge {
+  param(
+    [string]$tags,
+    [string]$valenceColumn = $null
+  )
+  if ($valenceColumn) { return (Parse-Valence $valenceColumn) }
+  if ($tags -match 'valence:(?<n>[+\-]?\d)') { return [int]$Matches.n }
+  return 0
+}
+
+# --- Budget and Output Management
+[int]$script:BundleBudgetKB = 500
+[int]$script:budgetBytes    = $script:BundleBudgetKB * 1024
+$budgetHit = $false
+$sb = [System.Text.StringBuilder]::new()
+
+function Add-LimitedLine {
+    param(
+        [System.Text.StringBuilder]$StringBuilder,
+        [string]$text
+    )
+    if (($StringBuilder.Length + $text.Length + 2) -lt $script:budgetBytes) {
+        $null = $StringBuilder.AppendLine($text)
+        return $true
+    }
+    return $false
+}
+
+# --- Data Loading and Processing
+# Load and score pins
+$pins = Import-Csv $PinsCsv -ErrorAction SilentlyContinue
+$pinsScored = $pins | ForEach-Object {
+  $prio = [int]($_.priority)
+  $val  = Get-ValenceNudge -tags $_.tags
+
+  [pscustomobject]@{
+    id      = $_.id
+    priority= $prio
+    type    = $_.type
+    date    = $_.date
+    tags    = $_.tags
+    title   = $_.title
+    content = $_.content
+    source  = $_.source
+    score   = $prio + $val # priority drives; valence nudges
+  }
+}
+
+# Create memory collections
+$items  = $pinsScored
+$core   = $items | Sort-Object @{Expression='score';Descending=$true}, @{Expression='id';Ascending=$true} | Select-Object -First $MaxCoreItems
+$events = $items | Where-Object { $_.type -eq 'event' -and $_.date } | Sort-Object date
+
+# Build keyword map
+$stopWords = @('the','a','an','and','or','of','to','in','on','for','with','by','is','are','was','were','be','as','at','it','this','that')
+$kwMap = @{}
+
+== tools\indexes\Delora_listing_prev.csv
+<binary or too large>
+
+== tools\indexes\Delora_listing.csv
+<binary or too large>
+
+

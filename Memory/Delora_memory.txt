@@ -1,0 +1,11 @@
+===== Delora Global Memory — 2025-08-19 03:42:48 =====
+
+== Root: C:\AI\Delora\Heart
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+

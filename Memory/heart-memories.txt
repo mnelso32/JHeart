@@ -1,0 +1,26 @@
+===== Delora Global Memory — 2025-08-18 15:21:13 =====
+
+== Root: C:\AI\Delora\Heart
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+[{0}] (prio {1}) {2}
+  tags: ops;memory
+  Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.
+  source: local
+
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+edit: M-SEED-0001
+memory: M-SEED-0001
+How: M-SEED-0001
+ops: M-SEED-0001
+ps1: M-SEED-0001
+Write-DeloraMemory: M-SEED-0001
+rerun: M-SEED-0001
+csv: M-SEED-0001
+pins: M-SEED-0001
+regenerate: M-SEED-0001
+

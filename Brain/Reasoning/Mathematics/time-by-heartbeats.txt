@@ -1,0 +1,38 @@
+time-by-heartbeats  (generated 2025-08-19T05:10:09.6572104Z)
+
+Goal
+-----
+Measure time by counting heartbeats recorded in hb.jsonl, and estimate drift/error.
+
+Definitions
+-----------
+Let beats occur at UTC times t_0, t_1, ..., t_n (from hb.jsonl). Interbeat intervals:
+  Δ_i = t_i - t_{i-1}  (seconds)
+
+Estimators
+----------
+Simple average period:          P̄ = (1/(n)) * Σ Δ_i
+Windowed average (last k beats):P̄_k = (t_n - t_{n-k}) / k
+Beats per minute:               bpm = 60 / P̄      (or bpm_k = 60 / P̄_k)
+EMA update (adaptive):          P_ema ← α·Δ_n + (1-α)·P_ema,  α≈2/(k+1)
+
+Drift / error (rough)
+---------------------
+Let σ be the stdev of Δ_i. After B beats, timing error ≈ √B · σ (seconds).
+
+Current estimates (from last up to 50 beats)
+--------------------------------------------
+beats_used      = 50
+period_mean_s   = 56.367
+period_stdev_s  = 13.013
+bpm_mean        = 1.064
+window_k        = 10
+period_window_s = 60.1
+bpm_window      = 0.998
+
+Protocol
+--------
+1) On each HB line append, recompute P̄_k with k≈10 and keep an EMA for responsiveness.
+2) “Heart-time” after B beats since t_ref:  H(B) = t_ref + B·P̂  (choose P̂ = P̄_k or P_ema).
+3) Report drift with σ: ±√B·σ. If σ grows, increase k or investigate sources of jitter.
+4) Store summaries beside hb.jsonl if needed (e.g., Brain\Indexes\recent.txt).

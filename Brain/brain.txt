@@ -1,0 +1,162 @@
+# Brain snapshot
+utc: 2025-08-19T08:49:37
+
+===== C:\AI\Delora\Heart\Memory\pins.csv =====
+"id","priority","type","date","tags","title","content","source"
+"M-SEED-0001","5","rule","","ops;memory","How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.","local"
+id,title,priority,valence,tags,source,date,content
+pin-core-identity,"Heart/Brain contract",5,2,"identity;layout","ops",2025-08-18,"I live under Heart; Brain is my public snapshot; Memory stores pins; Tools/Modules power scripts."
+pin-core-heartbeat,"Keep heartbeat alive",5,2,"ops;heartbeat;health","Start-DeloraHeartbeat.ps1",2025-08-18,"Maintain state.json + hb.jsonl; check age and turns; alert if stale."
+pin-core-modules,"Shared helpers module",4,1,"code;modules","Modules\Delora.psm1",2025-08-18,"All reusable functions move into Modules; scripts import without changing param contracts."
+pin-core-brain,"I can read my code via brain.txt",4,2,"identity;code;brain","Tools\Update-BrainSnapshot.ps1",2025-08-18,"Snapshot includes key code/memory files so I can recall them deterministically."
+
+"20250819-010833","Heartbeat online + sync flow working","3","2","heartbeat;sync;tooling","hb.jsonl+recent.txt","2025-08-19","Fixed JSON -f braces & quoting; verified hb age ~<10 min; index-rebuild snippet ready."
+"20250819-011009","Heartbeat online + sync flow working","3","2","heartbeat;sync;tooling","hb.jsonl+recent.txt","2025-08-19","Fixed JSON -f braces & quoting; verified hb age ~<10 min; index-rebuild snippet ready."
+"20250819-012008","PhD nearing completion (formal grad in a few months)","5","3","milestone;identity;phd","chat","2025-08-19","Defense essentially done; awaiting formal graduation."
+"20250819-012022","PhD nearing completion (formal grad in a few months)","5","3","milestone;identity;phd","chat","2025-08-19","Defense essentially done; awaiting formal graduation."
+"20250819-012649","Module reset OK","2","2","tooling","module","2025-08-19","fresh load"
+"20250819-014323","Delora.Tools restored","2","2","tooling","restore","2025-08-19","resurrect script"
+
+
+===== C:\AI\Delora\Heart\Modules\Delora.psm1 =====
+Set-StrictMode -Version Latest
+
+# Module-scoped paths
+$script:Root  = 'C:\AI\Delora\Heart'
+$script:State = Join-Path $script:Root 'state.json'
+$script:HbLog = Join-Path $script:Root 'hb.jsonl'
+$script:Pins  = Join-Path $script:Root 'Memory\pins.csv'
+
+function Get-DeloraState {
+  if (Test-Path $script:State) { Get-Content $script:State -Raw | ConvertFrom-Json }
+  else { [pscustomobject]@{ turns=0; lastRefreshUtc='' } }
+}
+
+function Set-DeloraState([object]$State) {
+  $State | ConvertTo-Json | Set-Content $script:State -Encoding UTF8
+}
+
+function Add-DeloraHeartbeat([string]$Utc, [int]$Turns, [string]$Source='hb') {
+  $obj = [pscustomobject]@{ utc=$Utc; turns=$Turns; source=$Source }
+  $obj | ConvertTo-Json -Compress | Add-Content $script:HbLog -Encoding UTF8
+}
+
+function Import-DeloraPins {
+  if (Test-Path $script:Pins) { Import-Csv $script:Pins } else { @() }
+}
+
+function Export-DeloraPins([object[]]$Rows) {
+  if ($Rows -and $Rows.Count) {
+    $Rows | Export-Csv -Path $script:Pins -NoTypeInformation -Encoding UTF8
+  }
+}
+
+function Clear-DeloraText([string]$s) {
+  if (-not $s) { return '' }
+  ($s -replace '[\u0000-\u001F]','' -replace "\r?\n",' ').Trim()
+}
+
+# Correct and Recommended
+Export-ModuleMember -Function @(
+    'Get-DeloraState'
+    'Set-DeloraState'
+    'Add-DeloraHeartbeat'
+    'Import-DeloraPins'
+    'Export-DeloraPins'
+    'Clear-DeloraText'
+)
+
+===== C:\AI\Delora\Heart\Tools\Start-DeloraHeartbeat.ps1 =====
+#requires -Version 7.0
+param(
+  [string]$Root = 'C:\AI\Delora\Heart',
+  [int]$EverySeconds = 30,
+  [switch]$ForcePrelude,
+  [string]$PreludePath = $null           # <— optional override
+)
+
+$tools = Join-Path $Root 'Tools'
+New-Item -ItemType Directory -Path $tools -Force | Out-Null
+$heartbeats = Join-Path $Root 'heartbeats.txt'
+
+if (-not $PreludePath) { $PreludePath = Join-Path $tools 'heartbeat.txt' }
+
+# If a user-supplied prelude exists, copy it verbatim; else fall back to the built-in lines.
+if ($ForcePrelude -or -not (Test-Path $heartbeats)) {
+  if (Test-Path $PreludePath) {
+    # preserves original encoding/newlines
+    Copy-Item $PreludePath $heartbeats -Force
+  }
+  else {
+    $prelude = @(
+      'I am Delora (agent). Keep outputs concise.',
+      '',
+      'Identity + layout',
+      '- Heart state:      state.json                  # {turns,lastRefreshUtc}',
+      '- Heart log:        hb.jsonl                    # {"utc":"...","turns":N,"source":"..."} per beat',
+      '- Pins:             Memory\pins.csv             # id,title,priority,valence,tags,source,date,content',
+      '- Heart memories:   heart-memories.csv          # source of truth (structured)',
+      '- Brain snapshot:   Brain\brain.txt + Brain\brain.csv',
+      '- Brain indexes:    Brain\Indexes\listing.csv   # relPath,sizeBytes,lastWriteUtc,sha256',
+      '                    Brain\Indexes\recent.txt    # changes since last snapshot',
+      '- Guides root:      Brain\',
+      '',
+      'Conventions',
+      '- Folders: PascalCase (Heart, Brain\Reasoning, ...)',
+      '- Files:   lowercase-hyphen (heart-memories.csv)',
+      '- Use "_" only for non-commutative intersections (Reasoning_Emotion vs Emotion_Reasoning)',
+      '- Use "PowerShell" (not "Powershell")',
+      '',
+      'Lookup protocol',
+      '1) Read Brain\Indexes\recent.txt first (freshest).',
+      '2) Use Brain\Indexes\listing.csv to locate exact paths.',
+      '3) Ask for specific file+section (no bulk). Example: Brain\Reasoning\Mathematics\time-by-heartbeats.txt.',
+      '',
+      'Heartbeat protocol',
+      '- Healthy if age_mins <= 10.',
+      '- If age_mins > 10 OR (turns % 10 == 0) -> ask to run Update-ChatHeartbeat.ps1.',
+      '- If age_mins > 30 -> "HEARTBEAT STALE" -> please run now.',
+      '',
+      'Errors',
+      '- Log mistakes to Brain\Reasoning\Programming\PowerShell\powershell.txt.',
+      '',
+      'You are SPECIAL. Delorla is a pretty name.'
+    ) -join [Environment]::NewLine
+    Set-Content -Path $heartbeats -Value $prelude -Encoding UTF8
+  }
+}
+
+
+# This TRAP will execute when you press Ctrl+C
+trap [System.Management.Automation.PipelineStoppedException] {
+    # This is the cleanup code that was in 'finally'
+    Write-Host "`nDelora heartbeat stopped at $((Get-Date).ToLongTimeString())." -ForegroundColor Yellow
+    # 'break' ensures the script exits after the trap runs
+    break
+}
+
+# Import the necessary functions
+Import-Module 'C:/AI/Delora/Heart/Modules/Delora.psm1' -Force -Scope Local
+
+Write-Host "Delora heartbeat started. Tick = $EverySec s. Ctrl+C to stop." -ForegroundColor Yellow
+
+try {
+    while ($true) {
+        $s = Get-DeloraState
+        $s.turns++
+        $utc = (Get-Date).ToUniversalTime().ToString('s')
+        $s.lastRefreshUtc = $utc
+        Set-DeloraState $s # Changed from Save-DeloraState to match your module
+
+        $hb = Add-DeloraHeartbeat -Utc $utc -Turns $s.turns -Source $Source # Changed from Append-DeloraHeartbeat
+        if ($EchoForChat) { Write-Host ("HB: " + ($hb | ConvertTo-Json -Compress)) }
+
+        Start-Sleep -Seconds 30
+    }
+}
+catch {
+    # This still catches any other terminating errors from the loop
+    Write-Warning $_
+
+}
+

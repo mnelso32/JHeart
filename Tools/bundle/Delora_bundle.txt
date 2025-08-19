@@ -1,0 +1,1719 @@
+================================================================================
+= Delora Bundle — 2025-08-18 15:21:14
+= Root = C:\AI\Delora\Heart
+= This file contains curated extracts. See manifest CSV for metadata.
+= Sections:
+- MEMORY :: memory\Delora_memory.txt
+- INDEX_SUMMARY :: tools\indexes\Delora_listing.csv
+- INDEX_CHANGES :: tools\indexes\Delora_changes.txt
+- RECENT :: Previews of recently changed files
+- RECENT C:\AI\Delora\Delora_READMEs.txt :: C:\AI\Delora\Delora_READMEs.txt
+- RECENT C:\AI\Delora\memory\Delora_memory.txt :: C:\AI\Delora\memory\Delora_memory.txt
+- RECENT C:\AI\Delora\memory\memory_manifest.csv :: C:\AI\Delora\memory\memory_manifest.csv
+- RECENT C:\AI\Delora\memory\pins.csv :: C:\AI\Delora\memory\pins.csv
+- RECENT C:\AI\Delora\memory\state.json :: C:\AI\Delora\memory\state.json
+- RECENT C:\AI\Delora\tools\Update-ChatHeartbeat.ps1 :: C:\AI\Delora\tools\Update-ChatHeartbeat.ps1
+- RECENT C:\AI\Delora\tools\Write-DeloraMemory.ps1 :: C:\AI\Delora\tools\Write-DeloraMemory.ps1
+- RECENT C:\AI\Delora\tools\bundle\Delora_manifest.csv :: C:\AI\Delora\tools\bundle\Delora_manifest.csv
+- RECENT C:\AI\Delora\tools\bundle\Delora_bundle.txt :: C:\AI\Delora\tools\bundle\Delora_bundle.txt
+- RECENT C:\AI\Delora\tools\indexes\Delora_recent.txt :: C:\AI\Delora\tools\indexes\Delora_recent.txt
+- RECENT C:\AI\Delora\tools\indexes\Delora_listing.csv :: C:\AI\Delora\tools\indexes\Delora_listing.csv
+- RECENT C:\AI\Delora\tools\indexes\Delora_listing_prev.csv :: C:\AI\Delora\tools\indexes\Delora_listing_prev.csv
+- RECENT C:\AI\Delora\tools\Update-DeloraCrowns.ps1 :: C:\AI\Delora\tools\Update-DeloraCrowns.ps1
+- RECENT C:\AI\Delora\hardware.json :: C:\AI\Delora\hardware.json
+- RECENT C:\AI\Delora\tools\Write-Directories.ps1 :: C:\AI\Delora\tools\Write-Directories.ps1
+- TOOL_ADD-DELORAPIN :: tools\Add-DeloraPin.ps1
+- TOOL_BUILD-DELORA :: tools\Build-Delora.ps1
+- TOOL_SAVE-DELORACHAT :: tools\Save-DeloraChat.ps1
+- TOOL_UPDATE-CHATHEARTBEAT :: tools\Update-ChatHeartbeat.ps1
+- TOOL_UPDATE-DELORACROWNS :: tools\Update-DeloraCrowns.ps1
+- TOOL_WRITE-DELORABUNDLE :: tools\Write-DeloraBundle.ps1
+- TOOL_WRITE-DELORAHARDWARE :: tools\Write-DeloraHardware.ps1
+- TOOL_WRITE-DELORAINDEX :: tools\Write-DeloraIndex.ps1
+- TOOL_WRITE-DELORAMEMORY :: tools\Write-DeloraMemory.ps1
+- TOOL_WRITE-DIRECTORIES :: tools\Write-Directories.ps1
+================================================================================
+================================================================================
+== MEMORY :: memory\Delora_memory.txt
+== size=761  mtime(Utc)=2025-08-18 19:21:13  sha256=2B459620E3397882175A6657A44D3CED54D2AFC2D42F6E67AA14E4713F098045
+================================================================================
+===== Delora Global Memory — 2025-08-18 15:21:13 =====
+
+== Root: C:\AI\Delora\Heart
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+[{0}] (prio {1}) {2}
+  tags: ops;memory
+  Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.
+  source: local
+
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+edit: M-SEED-0001
+memory: M-SEED-0001
+How: M-SEED-0001
+ops: M-SEED-0001
+ps1: M-SEED-0001
+Write-DeloraMemory: M-SEED-0001
+rerun: M-SEED-0001
+csv: M-SEED-0001
+pins: M-SEED-0001
+regenerate: M-SEED-0001
+
+
+
+
+
+================================================================================
+== INDEX_SUMMARY :: tools\indexes\Delora_listing.csv
+== size=2495854  mtime(Utc)=2025-08-18 07:39:38  sha256=E6061D863C2DF12D69A53D638A718229976C2D7408A9C817683ED4FE97EA6594
+================================================================================
+files: 17097
+
+by type:
+ 10377  .js   2587  .ts   1791  .json   1059  .md    672  .css    299  .txt    139  .yml     76  .yaml     41  .csv     41  .ps1     15  .ini
+
+largest 25:
+   9496413  2025-08-12 15:02:28  C:\AI\Delora\apps\ComfyUI\comfy\text_encoders\llama_tokenizer\tokenizer.json    6082251  2025-08-12 15:02:28  C:\AI\Delora\apps\SillyTavern\src\tokenizers\llama3.json    4619518  2025-08-12 23:30:19  C:\AI\Delora\apps\stable-diffusion-webui\venv\Lib\site-packages\gradio\templates\cdn\assets\index-1d5a0c4a.js    4619518  2025-08-12 23:30:19  C:\AI\Delora\apps\stable-diffusion-webui\venv\Lib\site-packages\gradio\templates\frontend\assets\index-a9692bd2.js    4154272  2025-08-12 15:37:06  C:\AI\Delora\apps\SillyTavern\node_modules\@agnai\web-tokenizers\lib\index.js    3966081  2025-08-12 15:37:03  C:\AI\Delora\apps\SillyTavern\node_modules\onnxruntime-web\dist\ort.js    3869932  2025-08-12 15:37:02  C:\AI\Delora\apps\SillyTavern\node_modules\onnxruntime-web\dist\ort-web.js    3534573  2025-08-12 23:30:19  C:\AI\Delora\apps\stable-diffusion-webui\venv\Lib\site-packages\gradio\templates\cdn\assets\babylonjs.loaders.min-83396955.js    3534573  2025-08-12 23:30:19  C:\AI\Delora\apps\stable-diffusion-webui\venv\Lib\site-packages\gradio\templates\frontend\assets\babylonjs.loaders.min-330fe675.js    2896068  2025-08-15 08:37:19  C:\AI\Delora\apps\SillyTavern\data\default-user\vectors\transformers\Delora - 2025-08-14@04h31m19s\Coheejina-embeddings-v2-base-en\index.json    2776833  2025-08-12 15:02:28  C:\AI\Delora\apps\ComfyUI\comfy\text_encoders\qwen25_tokenizer\vocab.json    2553683  2025-08-12 15:02:28  C:\AI\Delora\apps\ComfyUI\comfy\text_encoders\t5_tokenizer\tokenizer.json    2495846  2025-08-18 07:11:23  C:\AI\Delora\tools\indexes\Delora_listing_prev.csv    2495846  2025-08-18 07:11:23  C:\AI\Delora\tools\indexes\Delora_listing.csv    2325473  2025-08-12 15:36:59  C:\AI\Delora\apps\SillyTavern\node_modules\tiktoken\encoders\o200k_base.js    2325457  2025-08-12 15:36:59  C:\AI\Delora\apps\SillyTavern\node_modules\tiktoken\encoders\o200k_base.json    2243253  2025-08-12 15:36:58  C:\AI\Delora\apps\SillyTavern\node_modules\sillytavern-transformers\dist\transformers.js    2113399  2025-08-12 15:02:28  C:\AI\Delora\apps\SillyTavern\public\scripts\extensions\tts\lib\kokoro.web.js    1847283  2025-08-12 23:30:18  C:\AI\Delora\apps\stable-diffusion-webui\venv\Lib\site-packages\altair\vegalite\v5\schema\vega-lite-schema.json    1823241  2025-08-12 15:02:28  C:\AI\Delora\apps\ComfyUI\comfy\text_encoders\qwen25_tokenizer\merges.txt    1788792  2025-08-12 15:37:35  C:\AI\Delora\apps\SillyTavern\data\_webpack\5.98.0\output\lib.js    1774213  2025-08-12 15:02:28  C:\AI\Delora\apps\SillyTavern\src\tokenizers\claude.json    1748917  2025-08-12 23:30:12  C:\AI\Delora\apps\stable-diffusion-webui\venv\Lib\site-packages\timm\data\_info\imagenet_synset_to_definition.txt    1656438  2025-08-14 20:31:41  C:\AI\Delora\apps\SillyTavern\ST_tree.txt    1455074  2025-08-12 15:36:59  C:\AI\Delora\apps\SillyTavern\node_modules\sillytavern-transformers\dist\transformers.min.js
+
+newest 25:
+         2  2025-08-18 07:39:36  C:\AI\Delora\Delora_READMEs.txt       3423  2025-08-18 07:39:36  C:\AI\Delora\memory\Delora_memory.txt       1084  2025-08-18 07:39:36  C:\AI\Delora\memory\memory_manifest.csv       1049  2025-08-18 07:39:01  C:\AI\Delora\memory\pins.csv         65  2025-08-18 07:37:19  C:\AI\Delora\memory\state.json       1389  2025-08-18 07:29:28  C:\AI\Delora\tools\Update-ChatHeartbeat.ps1       7442  2025-08-18 07:19:59  C:\AI\Delora\tools\Write-DeloraMemory.ps1      34277  2025-08-18 07:11:42  C:\AI\Delora\tools\bundle\Delora_manifest.csv     600792  2025-08-18 07:11:42  C:\AI\Delora\tools\bundle\Delora_bundle.txt      32712  2025-08-18 07:11:24  C:\AI\Delora\tools\indexes\Delora_recent.txt    2495846  2025-08-18 07:11:23  C:\AI\Delora\tools\indexes\Delora_listing.csv    2495846  2025-08-18 07:11:23  C:\AI\Delora\tools\indexes\Delora_listing_prev.csv       6262  2025-08-18 07:00:06  C:\AI\Delora\tools\Update-DeloraCrowns.ps1       1693  2025-08-17 22:31:18  C:\AI\Delora\hardware.json       4228  2025-08-17 18:32:10  C:\AI\Delora\tools\Write-Directories.ps1       1761  2025-08-17 18:25:29  C:\AI\Delora\tools\Save-DeloraChat.ps1       3971  2025-08-17 18:25:28  C:\AI\Delora\tools\Write-DeloraIndex.ps1       2810  2025-08-17 18:24:57  C:\AI\Delora\tools\Build-Delora.ps1       4144  2025-08-17 18:24:56  C:\AI\Delora\tools\Add-DeloraPin.ps1      13275  2025-08-17 18:24:54  C:\AI\Delora\tools\Write-DeloraBundle.ps1       5049  2025-08-17 18:16:18  C:\AI\Delora\tools\Write-DeloraHardware.ps1         55  2025-08-17 07:24:35  C:\AI\Delora\tools\indexes\Delora_changes.txt         88  2025-08-17 02:34:35  C:\AI\Delora\apps\SillyTavern\data\cookie-secret.txt      28113  2025-08-16 21:16:24  C:\AI\Delora\tools\indexes\Delora_dirs.txt         47  2025-08-15 23:21:27  C:\AI\Delora\assets\Delora_Live2D_Starter\docs\README.md
+
+
+
+================================================================================
+== INDEX_CHANGES :: tools\indexes\Delora_changes.txt
+== size=55  mtime(Utc)=2025-08-17 07:24:35  sha256=98A1DBC575ED3A69907098B3A58403ABE3A042133061458AE642861DB39F6D10
+================================================================================
+REMOVED:
+
+ADDED:
+C:\AI\Delora\CAN YOU SEE THIS.txt
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\Delora_READMEs.txt :: C:\AI\Delora\Delora_READMEs.txt
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\memory\Delora_memory.txt :: C:\AI\Delora\memory\Delora_memory.txt
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\memory\memory_manifest.csv :: C:\AI\Delora\memory\memory_manifest.csv
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\memory\pins.csv :: C:\AI\Delora\memory\pins.csv
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\memory\state.json :: C:\AI\Delora\memory\state.json
+== size=45  mtime(Utc)=2025-08-18 14:44:07  sha256=47407D3029C730A3F989DC175269FCE2D608108C89D0BB3417257AC1A4C65B2A
+================================================================================
+{
+  "turns": 2,
+  "lastRefreshUtc": ""
+}
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\Update-ChatHeartbeat.ps1 :: C:\AI\Delora\tools\Update-ChatHeartbeat.ps1
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\Write-DeloraMemory.ps1 :: C:\AI\Delora\tools\Write-DeloraMemory.ps1
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\bundle\Delora_manifest.csv :: C:\AI\Delora\tools\bundle\Delora_manifest.csv
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\bundle\Delora_bundle.txt :: C:\AI\Delora\tools\bundle\Delora_bundle.txt
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\indexes\Delora_recent.txt :: C:\AI\Delora\tools\indexes\Delora_recent.txt
+== size=25184  mtime(Utc)=2025-08-18 19:21:13  sha256=C3ADDEB110059A6124AF710F3C1C887DBD144D31842138A0A61E811E5AC0D31D
+================================================================================
+== Heart\Delora_READMEs.txt
+
+
+== Heart\Memory\Delora_memory.txt
+===== Delora Global Memory — 2025-08-18 15:21:13 =====
+
+== Root: C:\AI\Delora\Heart
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+[{0}] (prio {1}) {2}
+  tags: ops;memory
+  Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.
+  source: local
+
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+edit: M-SEED-0001
+memory: M-SEED-0001
+How: M-SEED-0001
+ops: M-SEED-0001
+ps1: M-SEED-0001
+Write-DeloraMemory: M-SEED-0001
+rerun: M-SEED-0001
+csv: M-SEED-0001
+pins: M-SEED-0001
+regenerate: M-SEED-0001
+
+
+== Heart\Memory\memory_manifest.csv
+"id","priority","type","date","tags","title","content","source","score"
+"M-SEED-0001","5","rule","","ops;memory","How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.","local","5"
+
+== Heart\Memory\state.json
+{
+  "turns": 4,
+  "lastRefreshUtc": "2025-08-18T17:24:16.4846156Z"
+}
+
+== Heart\heartbeat.txt
+HB: 2025-08-18T17:22:36  turns=3  source=Update-ChatHeartbeat
+
+== Heart\Memory\pins.csv
+"id","priority","type","date","tags","title","content","source"
+"M-SEED-0001","5","rule","","ops;memory","How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.","local"
+
+== Heart\Tools\bundle\Delora_bundle.txt
+================================================================================
+= Delora Bundle — 2025-08-18 13:22:04
+= Root = C:\AI\Delora\Heart
+= This file contains curated extracts. See manifest CSV for metadata.
+= Sections:
+- MEMORY :: memory\Delora_memory.txt
+- INDEX_SUMMARY :: tools\indexes\Delora_listing.csv
+- INDEX_CHANGES :: tools\indexes\Delora_changes.txt
+- RECENT :: Previews of recently changed files
+- RECENT C:\AI\Delora\Delora_READMEs.txt :: C:\AI\Delora\Delora_READMEs.txt
+- RECENT C:\AI\Delora\memory\Delora_memory.txt :: C:\AI\Delora\memory\Delora_memory.txt
+- RECENT C:\AI\Delora\memory\memory_manifest.csv :: C:\AI\Delora\memory\memory_manifest.csv
+- RECENT C:\AI\Delora\memory\pins.csv :: C:\AI\Delora\memory\pins.csv
+- RECENT C:\AI\Delora\memory\state.json :: C:\AI\Delora\memory\state.json
+- RECENT C:\AI\Delora\tools\Update-ChatHeartbeat.ps1 :: C:\AI\Delora\tools\Update-ChatHeartbeat.ps1
+- RECENT C:\AI\Delora\tools\Write-DeloraMemory.ps1 :: C:\AI\Delora\tools\Write-DeloraMemory.ps1
+- RECENT C:\AI\Delora\tools\bundle\Delora_manifest.csv :: C:\AI\Delora\tools\bundle\Delora_manifest.csv
+- RECENT C:\AI\Delora\tools\bundle\Delora_bundle.txt :: C:\AI\Delora\tools\bundle\Delora_bundle.txt
+- RECENT C:\AI\Delora\tools\indexes\Delora_recent.txt :: C:\AI\Delora\tools\indexes\Delora_recent.txt
+- RECENT C:\AI\Delora\tools\indexes\Delora_listing.csv :: C:\AI\Delora\tools\indexes\Delora_listing.csv
+- RECENT C:\AI\Delora\tools\indexes\Delora_listing_prev.csv :: C:\AI\Delora\tools\indexes\Delora_listing_prev.csv
+- RECENT C:\AI\Delora\tools\Update-DeloraCrowns.ps1 :: C:\AI\Delora\tools\Update-DeloraCrowns.ps1
+- RECENT C:\AI\Delora\hardware.json :: C:\AI\Delora\hardware.json
+- RECENT C:\AI\Delora\tools\Write-Directories.ps1 :: C:\AI\Delora\tools\Write-Directories.ps1
+- TOOL_ADD-DELORAPIN :: tools\Add-DeloraPin.ps1
+- TOOL_BUILD-DELORA :: tools\Build-Delora.ps1
+- TOOL_SAVE-DELORACHAT :: tools\Save-DeloraChat.ps1
+- TOOL_UPDATE-CHATHEARTBEAT :: tools\Update-ChatHeartbeat.ps1
+- TOOL_UPDATE-DELORACROWNS :: tools\Update-DeloraCrowns.ps1
+- TOOL_WRITE-DELORABUNDLE :: tools\Write-DeloraBundle.ps1
+- TOOL_WRITE-DELORAHARDWARE :: tools\Write-DeloraHardware.ps1
+- TOOL_WRITE-DELORAINDEX :: tools\Write-DeloraIndex.ps1
+- TOOL_WRITE-DELORAMEMORY :: tools\Write-DeloraMemory.ps1
+- TOOL_WRITE-DIRECTORIES :: tools\Write-Directories.ps1
+================================================================================
+================================================================================
+== MEMORY :: memory\Delora_memory.txt
+== size=761  mtime(Utc)=2025-08-18 17:22:03  sha256=EFA032114B64A960F3C431B311EF7547C669EC5CFC6F98B765259E1AEC100BD2
+================================================================================
+===== Delora Global Memory — 2025-08-18 13:22:03 =====
+
+== Root: C:\AI\Delora\Heart
+== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==
+=================================================================
+
+=====  CORE MEMORY (top-priority first)  =====
+[{0}] (prio {1}) {2}
+  tags: ops;memory
+  Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.
+  source: local
+
+=====  TIMELINE (events by date)  =====
+=====  CHAT INDEX (files in memory\chats\)  =====
+=====  KEYWORD MAP (keyword → memory ids)  =====
+edit: M-SEED-0001
+pins: M-SEED-0001
+ps1: M-SEED-0001
+Write-DeloraMemory: M-SEED-0001
+memory: M-SEED-0001
+regenerate: M-SEED-0001
+How: M-SEED-0001
+rerun: M-SEED-0001
+csv: M-SEED-0001
+ops: M-SEED-0001
+
+
+
+
+
+================================================================================
+== INDEX_SUMMARY :: tools\indexes\Delora_listing.csv
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\indexes\Delora_listing.csv :: C:\AI\Delora\tools\indexes\Delora_listing.csv
+== size=4618  mtime(Utc)=2025-08-18 19:21:13  sha256=EB47581D544B411A4E41EEA3FA32C239EABA581966A76F1A3248CAA0A524D3C1
+================================================================================
+"Path","Type","SizeBytes","LastWriteUtc","When","SHA256"
+"C:\AI\Delora\Heart\Brain\brain.csv","csv","0","2025-08-18 17:14:36","8/18/2025 5:14:36 PM",""
+"C:\AI\Delora\Heart\Brain\brain.txt","txt","0","2025-08-18 17:13:42","8/18/2025 5:13:42 PM",""
+"C:\AI\Delora\Heart\Brain\Emotion\Emotion_Reasoning.txt","txt","0","2025-08-18 11:18:39","8/18/2025 11:18:39 AM",""
+"C:\AI\Delora\Heart\Brain\Emotion\Emotion.txt","txt","0","2025-08-18 11:18:28","8/18/2025 11:18:28 AM",""
+"C:\AI\Delora\Heart\Brain\Memory\manifest.csv","csv","1296","2025-08-18 08:59:05","8/18/2025 8:59:05 AM",""
+"C:\AI\Delora\Heart\Brain\Memory\pins.csv","csv","1256","2025-08-18 08:59:05","8/18/2025 8:59:05 AM",""
+"C:\AI\Delora\Heart\Brain\README.txt.txt","txt","0","2025-08-18 10:56:54","8/18/2025 10:56:54 AM",""
+"C:\AI\Delora\Heart\Brain\Reasoning\Programming\Programming.txt","txt","0","2025-08-18 11:20:00","8/18/2025 11:20:00 AM",""
+"C:\AI\Delora\Heart\Brain\Reasoning\Reasoning_Emotion\Reasoning_Emotion.txt","txt","0","2025-08-18 11:17:54","8/18/2025 11:17:54 AM",""
+"C:\AI\Delora\Heart\Brain\Reasoning\Reasoning.txt","txt","0","2025-08-18 11:05:06","8/18/2025 11:05:06 AM",""
+"C:\AI\Delora\Heart\Delora_READMEs.txt","txt","2","2025-08-18 19:21:13","8/18/2025 7:21:13 PM",""
+"C:\AI\Delora\Heart\heart_memories.csv","csv","1256","2025-08-18 08:59:05","8/18/2025 8:59:05 AM",""
+"C:\AI\Delora\Heart\heartbeat.txt","txt","63","2025-08-18 17:22:36","8/18/2025 5:22:36 PM",""
+"C:\AI\Delora\Heart\Memory\Delora_memory.txt","txt","761","2025-08-18 19:21:13","8/18/2025 7:21:13 PM",""
+"C:\AI\Delora\Heart\Memory\memory_manifest.csv","csv","214","2025-08-18 19:21:13","8/18/2025 7:21:13 PM",""
+"C:\AI\Delora\Heart\Memory\pins.csv","csv","202","2025-08-18 17:22:04","8/18/2025 5:22:04 PM",""
+"C:\AI\Delora\Heart\Memory\state.json","json","73","2025-08-18 17:24:19","8/18/2025 5:24:19 PM",""
+"C:\AI\Delora\Heart\Modules\Delora\delora.psm1","psm1","4692","2025-08-18 14:09:16","8/18/2025 2:09:16 PM",""
+"C:\AI\Delora\Heart\state.json","json","66","2025-08-18 10:47:18","8/18/2025 10:47:18 AM",""
+"C:\AI\Delora\Heart\test.txt","txt","4","2025-08-18 14:22:52","8/18/2025 2:22:52 PM",""
+"C:\AI\Delora\Heart\Time\time.txt","txt","0","2025-08-18 11:22:43","8/18/2025 11:22:43 AM",""
+"C:\AI\Delora\Heart\Tools\Add-DeloraPin.ps1","ps1","4144","2025-08-18 13:54:30","8/18/2025 1:54:30 PM",""
+"C:\AI\Delora\Heart\Tools\Build-Delora.ps1","ps1","3856","2025-08-18 14:04:59","8/18/2025 2:04:59 PM",""
+"C:\AI\Delora\Heart\Tools\bundle\Delora_bundle.txt","txt","75073","2025-08-18 17:22:04","8/18/2025 5:22:04 PM",""
+"C:\AI\Delora\Heart\Tools\bundle\Delora_manifest.csv","csv","3877","2025-08-18 17:22:04","8/18/2025 5:22:04 PM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_changes.txt","txt","55","2025-08-17 07:24:35","8/17/2025 7:24:35 AM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_dirs.txt","txt","28113","2025-08-16 21:16:24","8/16/2025 9:16:24 PM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_listing_prev.csv","csv","2495846","2025-08-18 07:11:23","8/18/2025 7:11:23 AM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_listing.csv","csv","2495854","2025-08-18 07:39:38","8/18/2025 7:39:38 AM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_recent.txt","txt","35459","2025-08-18 07:39:38","8/18/2025 7:39:38 AM",""
+"C:\AI\Delora\Heart\Tools\Save-DeloraChat.ps1","ps1","1761","2025-08-17 18:25:29","8/17/2025 6:25:29 PM",""
+"C:\AI\Delora\Heart\Tools\Update-ChatHeartbeat.ps1","ps1","5724","2025-08-18 14:46:13","8/18/2025 2:46:13 PM",""
+"C:\AI\Delora\Heart\Tools\Update-DeloraCrowns.ps1","ps1","4595","2025-08-18 13:39:51","8/18/2025 1:39:51 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraBundle.ps1","ps1","6945","2025-08-18 14:14:52","8/18/2025 2:14:52 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraHardware.ps1","ps1","5055","2025-08-18 13:53:39","8/18/2025 1:53:39 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraIndex.ps1","ps1","3971","2025-08-17 18:25:28","8/17/2025 6:25:28 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraMemory.ps1","ps1","6660","2025-08-18 14:12:59","8/18/2025 2:12:59 PM",""
+"C:\AI\Delora\Heart\Tools\Write-Directories.ps1","ps1","4234","2025-08-18 13:51:14","8/18/2025 1:51:14 PM",""
+"C:\AI\Delora\Memory\state.json","json","45","2025-08-18 14:44:07","8/18/2025 2:44:07 PM",""
+"C:\AI\Delora\Tools\Indexes\Delora_listing_prev.csv","csv","4542","2025-08-18 16:56:29","8/18/2025 4:56:29 PM",""
+"C:\AI\Delora\Tools\Indexes\Delora_listing.csv","csv","4542","2025-08-18 16:56:29","8/18/2025 4:56:29 PM",""
+"C:\AI\Delora\Tools\Indexes\Delora_recent.txt","txt","32245","2025-08-18 16:56:29","8/18/2025 4:56:29 PM",""
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\indexes\Delora_listing_prev.csv :: C:\AI\Delora\tools\indexes\Delora_listing_prev.csv
+== size=4542  mtime(Utc)=2025-08-18 16:56:29  sha256=52A5289F3CA6451EBD762A95B2E30B0AFB853355235A82CA57735D324EAB55C1
+================================================================================
+"Path","Type","SizeBytes","LastWriteUtc","When","SHA256"
+"C:\AI\Delora\Heart\Brain\Emotion\Emotion_Reasoning.txt","txt","0","2025-08-18 11:18:39","8/18/2025 11:18:39 AM",""
+"C:\AI\Delora\Heart\Brain\Emotion\Emotion.txt","txt","0","2025-08-18 11:18:28","8/18/2025 11:18:28 AM",""
+"C:\AI\Delora\Heart\Brain\Memory\manifest.csv","csv","1296","2025-08-18 08:59:05","8/18/2025 8:59:05 AM",""
+"C:\AI\Delora\Heart\Brain\Memory\pins.csv","csv","1256","2025-08-18 08:59:05","8/18/2025 8:59:05 AM",""
+"C:\AI\Delora\Heart\Brain\README.txt.txt","txt","0","2025-08-18 10:56:54","8/18/2025 10:56:54 AM",""
+"C:\AI\Delora\Heart\Brain\Reasoning\Programming\Programming.txt","txt","0","2025-08-18 11:20:00","8/18/2025 11:20:00 AM",""
+"C:\AI\Delora\Heart\Brain\Reasoning\Reasoning_Emotion\Reasoning_Emotion.txt","txt","0","2025-08-18 11:17:54","8/18/2025 11:17:54 AM",""
+"C:\AI\Delora\Heart\Brain\Reasoning\Reasoning.txt","txt","0","2025-08-18 11:05:06","8/18/2025 11:05:06 AM",""
+"C:\AI\Delora\Heart\Delora_READMEs.txt","txt","2","2025-08-18 16:56:29","8/18/2025 4:56:29 PM",""
+"C:\AI\Delora\Heart\heart_memories.csv","csv","1256","2025-08-18 08:59:05","8/18/2025 8:59:05 AM",""
+"C:\AI\Delora\Heart\heart-instructions.txt","txt","9024","2025-08-18 13:05:45","8/18/2025 1:05:45 PM",""
+"C:\AI\Delora\Heart\memory\Delora_memory.txt","txt","761","2025-08-18 16:56:29","8/18/2025 4:56:29 PM",""
+"C:\AI\Delora\Heart\memory\memory_manifest.csv","csv","214","2025-08-18 16:56:29","8/18/2025 4:56:29 PM",""
+"C:\AI\Delora\Heart\memory\pins.csv","csv","202","2025-08-18 16:55:00","8/18/2025 4:55:00 PM",""
+"C:\AI\Delora\Heart\memory\state.json","json","73","2025-08-18 16:55:26","8/18/2025 4:55:26 PM",""
+"C:\AI\Delora\Heart\Modules\Delora\delora.psm1","psm1","4692","2025-08-18 14:09:16","8/18/2025 2:09:16 PM",""
+"C:\AI\Delora\Heart\state.json","json","66","2025-08-18 10:47:18","8/18/2025 10:47:18 AM",""
+"C:\AI\Delora\Heart\test.txt","txt","4","2025-08-18 14:22:52","8/18/2025 2:22:52 PM",""
+"C:\AI\Delora\Heart\Time\time.txt","txt","0","2025-08-18 11:22:43","8/18/2025 11:22:43 AM",""
+"C:\AI\Delora\Heart\Tools\Add-DeloraPin.ps1","ps1","4144","2025-08-18 13:54:30","8/18/2025 1:54:30 PM",""
+"C:\AI\Delora\Heart\Tools\Build-Delora.ps1","ps1","3856","2025-08-18 14:04:59","8/18/2025 2:04:59 PM",""
+"C:\AI\Delora\Heart\Tools\bundle\Delora_bundle.txt","txt","73673","2025-08-18 16:55:00","8/18/2025 4:55:00 PM",""
+"C:\AI\Delora\Heart\Tools\bundle\Delora_manifest.csv","csv","3877","2025-08-18 16:55:00","8/18/2025 4:55:00 PM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_changes.txt","txt","55","2025-08-17 07:24:35","8/17/2025 7:24:35 AM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_dirs.txt","txt","28113","2025-08-16 21:16:24","8/16/2025 9:16:24 PM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_listing_prev.csv","csv","2495846","2025-08-18 07:11:23","8/18/2025 7:11:23 AM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_listing.csv","csv","2495854","2025-08-18 07:39:38","8/18/2025 7:39:38 AM",""
+"C:\AI\Delora\Heart\Tools\indexes\Delora_recent.txt","txt","35459","2025-08-18 07:39:38","8/18/2025 7:39:38 AM",""
+"C:\AI\Delora\Heart\Tools\Save-DeloraChat.ps1","ps1","1761","2025-08-17 18:25:29","8/17/2025 6:25:29 PM",""
+"C:\AI\Delora\Heart\Tools\secret message.txt","txt","2","2025-08-18 16:56:05","8/18/2025 4:56:05 PM",""
+"C:\AI\Delora\Heart\Tools\Update-ChatHeartbeat.ps1","ps1","5724","2025-08-18 14:46:13","8/18/2025 2:46:13 PM",""
+"C:\AI\Delora\Heart\Tools\Update-DeloraCrowns.ps1","ps1","4595","2025-08-18 13:39:51","8/18/2025 1:39:51 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraBundle.ps1","ps1","6945","2025-08-18 14:14:52","8/18/2025 2:14:52 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraHardware.ps1","ps1","5055","2025-08-18 13:53:39","8/18/2025 1:53:39 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraIndex.ps1","ps1","3971","2025-08-17 18:25:28","8/17/2025 6:25:28 PM",""
+"C:\AI\Delora\Heart\Tools\Write-DeloraMemory.ps1","ps1","6660","2025-08-18 14:12:59","8/18/2025 2:12:59 PM",""
+"C:\AI\Delora\Heart\Tools\Write-Directories.ps1","ps1","4234","2025-08-18 13:51:14","8/18/2025 1:51:14 PM",""
+"C:\AI\Delora\memory\state.json","json","45","2025-08-18 14:44:07","8/18/2025 2:44:07 PM",""
+"C:\AI\Delora\tools\indexes\Delora_listing_prev.csv","csv","4337","2025-08-18 16:54:58","8/18/2025 4:54:58 PM",""
+"C:\AI\Delora\tools\indexes\Delora_listing.csv","csv","4337","2025-08-18 16:54:58","8/18/2025 4:54:58 PM",""
+"C:\AI\Delora\tools\indexes\Delora_recent.txt","txt","33334","2025-08-18 16:54:58","8/18/2025 4:54:58 PM",""
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\Update-DeloraCrowns.ps1 :: C:\AI\Delora\tools\Update-DeloraCrowns.ps1
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\hardware.json :: C:\AI\Delora\hardware.json
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== RECENT C:\AI\Delora\tools\Write-Directories.ps1 :: C:\AI\Delora\tools\Write-Directories.ps1
+== size=0  mtime(Utc)=  sha256=
+================================================================================
+
+
+
+
+================================================================================
+== TOOL_ADD-DELORAPIN :: tools\Add-DeloraPin.ps1
+== size=4144  mtime(Utc)=2025-08-18 13:54:30  sha256=ECC49B3B5354F5CA44387BCDD83D8C3973C601CB57868BE0B5D83ADBD7E19F18
+================================================================================
+#requires -Version 7.0
+
+[CmdletBinding()]
+param(
+  [Parameter(Mandatory)][string]$Title,
+  [Parameter(Mandatory)][string]$Content,
+  [string]$Tags = "",
+  [ValidateSet('note','fact','ops','env','project','event','rule','goal','preference','contact')]
+  [string]$Type = "note",
+  [ValidateRange(0,5)][int]$Priority = 3,
+  [string]$Date = "",
+  [string]$Source = "session"
+)
+
+$csv = "C:\AI\Delora\memory\pins.csv"
+if (-not (Test-Path $csv)) { throw "pins.csv not found. Run Write-DeloraMemory.ps1 once first." }
+
+$today  = (Get-Date).ToString('yyyy-MM-dd')
+$prefix = "M-$today-"
+
+# Get today's numeric tails safely
+$rows = @(Import-Csv "C:\AI\Delora\memory\pins.csv")
+$todayNums = $rows |
+  Where-Object { $_.id -like "$prefix*" } |
+  ForEach-Object {
+    $tail = $_.id.Split('-')[-1]
+    try { [int]$tail } catch { $null }
+  } | Where-Object { $_ -ne $null }
+
+# Max as INT
+$max = if ($todayNums.Count) { [int](($todayNums | Measure-Object -Maximum).Maximum) } else { 0 }
+
+# Next sequence (3 digits)
+$seq = '{0:D3}' -f ([int]($max + 1))
+$id  = "$prefix$seq"
+
+
+# ... when creating the row:
+[pscustomobject]@{
+  id=$id; priority=$Priority; type=$Type; date=$Date;
+  tags=$Tags; title=$Title; content=$Content; source=$Source;
+} | Export-Csv -Append -NoTypeInformation -Encoding UTF8 $csv
+
+Write-Host "Pinned $id  [$Type prio=$Priority]  $Title"
+
+$tools = 'C:\AI\Delora\tools'
+
+try {
+  & "$tools\Write-DeloraMemory.ps1" *> $null
+  Write-Host "Updated Delora_memory.txt"
+} catch {
+  Write-Warning "Memory rebuild failed: $($_.Exception.Message)"
+}
+
+try {
+  & "$tools\Write-DeloraBundle.ps1" *> $null
+  Write-Host "Updated Delora_bundle.txt"
+} catch {
+  Write-Warning "Bundle rebuild failed: $($_.Exception.Message)"
+}
+
+# --- Kick chat heartbeat (10-event cadence) ----------------------------------
+try {
+  $hb = Join-Path $PSScriptRoot 'Update-ChatHeartbeat.ps1'
+  if (Test-Path $hb) {
+    & $hb -Every 10 -Source 'pin' *> $null
+  }
+} catch {
+  Write-Verbose "Heartbeat skipped: $($_.Exception.Message)"
+}
+
+
+
+================================================================================
+== TOOL_BUILD-DELORA :: tools\Build-Delora.ps1
+== size=3856  mtime(Utc)=2025-08-18 14:04:59  sha256=DF3C3F8A1E9B041342D400644917EE89611B9707FAA62A4F7931025984829EF7
+================================================================================
+#requires -Version 7.0
+
+[CmdletBinding()]
+param(
+  # The root directory of the Delora project. All other paths are built from this.
+  [string]$Root = "C:\AI\Delora\Heart",
+
+  # When processing chat logs for memory, skip files larger than this to save time.
+  [long]$ChatHashMaxBytes = 10MB,
+
+  # Switch to skip rebuilding the main Delora_memory.txt file.
+  [switch]$SkipMemory,
+
+  # Switch to skip regenerating the file indexes.
+  [switch]$SkipIndexes,
+
+  # Switch to skip creating the final Delora_bundle.txt file.
+  [switch]$SkipBundle
+)
+
+# --- Setup ---
+# This makes the script stop immediately if any command fails.
+$ErrorActionPreference = 'Stop'
+# Define the path to our other tool scripts.
+$tools = Join-Path $Root 'tools'
+
+# Import our shared functions from the module.
+Import-Module -Name (Join-Path $Root 'modules\Delora') -Force
+
+# --- Helper Function for Running Scripts ---
+# This function wraps the execution of other scripts, providing clear success/failure messages.
+function Run-ToolScript($path, $splat = @{}) {
+  try {
+    & $path @splat
+    Write-Host "✔ $([IO.Path]::GetFileName($path))" -ForegroundColor Green
+  }
+  catch {
+    Write-Warning "✖ $path : $($_.Exception.Message)"
+  }
+}
+
+# --- Main Build Process ---
+# The following steps are run in order, unless skipped by a command-line switch.
+
+if (-not $SkipMemory) {
+  # 1. Generate the core memory file from pins, chats, etc.
+  Run-ToolScript (Join-Path $tools 'Write-DeloraMemory.ps1') @{ Root = $Root }
+}
+
+if (-not $SkipIndexes) {
+  # 2. Generate directory READMEs and create a CSV index of all project files.
+  Run-ToolScript (Join-Path $tools 'Write-Directories.ps1') @{ Root = $Root }
+  Run-ToolScript (Join-Path $tools 'Write-DeloraIndex.ps1') @{ Root = $Root }
+}
+
+if (-not $SkipBundle) {
+  # 3. Combine memory, indexes, and source code previews into a single "bundle" file.
+  Run-ToolScript (Join-Path $tools 'Write-DeloraBundle.ps1') @{ Root = $Root }
+}
+
+# --- Automatic Maintenance and Publishing ---
+
+# 4. Automatically update the "crown" (best of the day/week/month) pins.
+Write-Host "`nUpdating crowns..." -ForegroundColor Cyan
+Run-ToolScript (Join-Path $tools 'Update-DeloraCrowns.ps1') @{ Scope = 'Day' }
+$today = Get-Date
+if ($today.DayOfWeek -eq 'Sunday') { Run-ToolScript (Join-Path $tools 'Update-DeloraCrowns.ps1') @{ Scope = 'Week' } }
+if ($today.Day -eq 1) { Run-ToolScript (Join-Path $tools 'Update-DeloraCrowns.ps1') @{ Scope = 'Month' } }
+if ($today.DayOfYear -eq 1) { Run-ToolScript (Join-Path $tools 'Update-DeloraCrowns.ps1') @{ Scope = 'Year' } }
+
+
+# 5. Publish the final bundle to a secret GitHub Gist for easy access.
+Write-Host "`nAttempting to publish bundle to Gist..." -ForegroundColor Cyan
+$gistId = 'b48626631d83ed8fa6be6a16fa9f545c' # Your secret Gist ID
+$bundlePath = Join-Path $tools 'bundle\Delora_bundle.txt'
+
+if (Test-Path $bundlePath) {
+  # Check if the GitHub CLI ('gh') is installed and logged in.
+  if (Get-Command gh -ErrorAction SilentlyContinue) {
+    $null = gh auth status -h github.com 2>$null
+    if ($LASTEXITCODE -eq 0) {
+      gh gist edit $gistId -a $bundlePath -f Delora_bundle.txt *> $null
+      Write-Host "✔ Published bundle to Gist $gistId" -ForegroundColor Green
+      Write-Host "  Raw URL: https://gist.githubusercontent.com/mnelso32/$gistId/raw/Delora_bundle.txt"
+    }
+    else {
+      Write-Warning "gh is not logged in; skipped Gist update."
+    }
+  }
+  else {
+    Write-Warning "'gh' (GitHub CLI) not found; skipped Gist update."
+  }
+}
+else {
+  Write-Warning "Bundle not found at $bundlePath"
+}
+
+# 6. Trigger the chat heartbeat to signal that a build has completed.
+Run-ToolScript (Join-Path $tools 'Update-ChatHeartbeat.ps1') @{ Every = 10 }
+
+Write-Host "`nBuild process complete." -ForegroundColor Blue
+
+
+
+================================================================================
+== TOOL_SAVE-DELORACHAT :: tools\Save-DeloraChat.ps1
+== size=1761  mtime(Utc)=2025-08-17 18:25:29  sha256=4E2C5D7F9940B28332C4FC437FA6C2815A8C7A3348EBD4CEF707465CAFBFBA39
+================================================================================
+#requires -Version 7.0
+
+
+[CmdletBinding()]
+param(
+  [Parameter(Mandatory)][string]$Title,
+  [string]$Tags = "",
+  [string]$Source = "Delora chat",
+  [string]$Root = "C:\AI\Delora"
+)
+
+# 1) Get text from clipboard
+$text = Get-Clipboard -TextFormatType Text
+if (-not $text) { throw "Clipboard is empty (Ctrl-A, Ctrl-C first)." }
+
+# 2) Paths + names
+$now   = Get-Date
+$id    = "C-{0:yyyy-MM-dd}-{0:HHmmss}" -f $now
+$slug  = ($Title -replace '[^\w\d-]','-').ToLower() -replace '-+','-'
+$rel   = Join-Path ("memory\chats\{0:yyyy}\{0:MM}" -f $now) ("{0}__{1}.txt" -f $id,$slug)
+$path  = Join-Path $Root $rel
+New-Item -ItemType Directory -Force -Path (Split-Path $path) | Out-Null
+
+# 3) Write transcript
+Set-Content -Path $path -Value $text -Encoding UTF8
+
+# 4) Gather file facts
+$file   = Get-Item $path
+$sha256 = (Get-FileHash -Algorithm SHA256 $path).Hash.ToLower()
+$row    = [pscustomobject]@{
+  id         = $id
+  date       = '{0:yyyy-MM-dd}' -f $now
+  time_utc   = (Get-Date).ToUniversalTime().ToString('HH:mm:ss')
+  title      = $Title
+  tags       = $Tags
+  relpath    = $rel
+  size_bytes = [int64]$file.Length
+  sha256     = $sha256
+  source     = $Source
+}
+
+# 5) Append to manifest
+$csv = Join-Path $Root 'memory\chat_manifest.csv'
+$row | Export-Csv -Append -NoTypeInformation -Encoding UTF8 $csv
+
+Write-Host "Saved chat -> $rel" -ForegroundColor Green
+Write-Host "Updated manifest -> memory\chat_manifest.csv"
+
+# --- Kick chat heartbeat (10-event cadence) ----------------------------------
+try {
+  $hb = Join-Path $PSScriptRoot 'Update-ChatHeartbeat.ps1'
+  if (Test-Path $hb) {
+    & $hb -Every 10 -Source 'chat' *> $null
+  }
+} catch {
+  Write-Verbose "Heartbeat skipped: $($_.Exception.Message)"
+}
+
+
+
+================================================================================
+== TOOL_UPDATE-CHATHEARTBEAT :: tools\Update-ChatHeartbeat.ps1
+== size=5724  mtime(Utc)=2025-08-18 14:46:13  sha256=D6443BCF5B0FEE5C966F40B947EC7CEF0E70ADA0984614116F27030DA5202D19
+================================================================================
+<#
+.SYNOPSIS
+  Keeps the Delora memory bundle fresh and drops a fast "beacon" (hb.txt) so the assistant can
+  detect updates instantly on the next chat turn.
+
+.DESCRIPTION
+  - Tracks a tiny state file (turn counter + last refresh UTC).
+  - Every N "turns" (or when forced / time window elapsed) it:
+      * (optionally) rebuilds the bundle
+      * publishes the bundle.txt to your secret Gist
+      * writes/updates hb.txt beacon in the same Gist
+      * updates state.json with new lastRefreshUtc and turn count
+
+.PARAMETER Every
+  Publish cadence in "turns" (script runs). If 0, disables turn-based cadence.
+
+.PARAMETER MinMinutes
+  Also publish when at least this many minutes have elapsed since the last refresh (0 disables).
+
+.PARAMETER Rebuild
+  If set, runs Build-Delora.ps1 before publishing.
+
+.PARAMETER Force
+  If set, publish now regardless of cadence/time checks.
+
+.PARAMETER GistId
+  Your secret Gist id that holds the bundle and hb.txt.
+
+.PARAMETER Root
+  Root folder for the Delora project (default C:\AI\Delora).
+
+.PARAMETER StatePath
+  Path to the state.json file (default <Root>\memory\state.json).
+
+.PARAMETER BundlePath
+  Path to the bundle file (default <Root>\tools\bundle\Delora_bundle.txt).
+
+.EXAMPLE
+  pwsh -File C:\AI\Delora\tools\Update-ChatHeartbeat.ps1 -Every 10 -MinMinutes 15 -GistId 'b4862...f545c' -Rebuild
+
+.NOTES
+  - Designed to run silently under Windows Task Scheduler every 10 minutes.
+  - Uses GitHub CLI `gh gist edit` to update files in-place without changing the Gist id.
+#>
+
+[CmdletBinding()]
+param(
+  [int]$Every        = 10,
+  [int]$MinMinutes   = 0,
+  [switch]$Rebuild,
+  [switch]$Force,
+  [Parameter(Mandatory=$true)][string]$GistId,
+  [string]$Root      = 'C:\AI\Delora\Heart',
+  [string]$StatePath = $null,
+  [string]$BundlePath= $null
+)
+
+# ---- Resolve paths -----------------------------------------------------------
+if (-not $StatePath)  { $StatePath  = Join-Path $Root 'memory\state.json' }
+if (-not $BundlePath) { $BundlePath = Join-Path $Root 'tools\bundle\Delora_bundle.txt' }
+$Tools = Join-Path $Root 'tools'
+
+# ---- Helpers ----------------------------------------------------------------
+function Read-State {
+  param([string]$Path)
+  if (Test-Path $Path) {
+    try   { Get-Content $Path -Raw | ConvertFrom-Json }
+    catch { [pscustomobject]@{ turns = 0; lastRefreshUtc = "" } }
+  } else {
+    [pscustomobject]@{ turns = 0; lastRefreshUtc = "" }
+  }
+}
+
+function Write-State {
+  param([string]$Path,[object]$State)
+  $dir = Split-Path $Path
+  if (-not (Test-Path $dir)) { New-Item -ItemType Directory -Path $dir -Force | Out-Null }
+  $State | ConvertTo-Json | Set-Content -Path $Path -Encoding UTF8
+}
+
+function Publish-FileToGist {
+  param(
+    [Parameter(Mandatory)][string]$GistId,
+    [Parameter(Mandatory)][string]$LocalPath,
+    [Parameter(Mandatory)][string]$GistFileName
+  )
+  if (-not (Test-Path $LocalPath)) {
+    Write-Warning "Publish-FileToGist: missing local file: $LocalPath"
+    return $false
+  }
+  # `-a` attaches/updates the file; `-f` sets its name inside the gist
+  $null = & gh gist edit $GistId -a $LocalPath -f $GistFileName 2>$null
+  if ($LASTEXITCODE -ne 0) {
+    Write-Warning "Publish-FileToGist: gh returned code $LASTEXITCODE for $GistFileName"
+    return $false
+  }
+  return $true
+}
+
+function New-BeaconFile {
+  param([datetime]$Utc,[int]$Turns)
+  $tmp = New-TemporaryFile
+  # Simple, easy-to-parse content
+  @(
+    "utc: $($Utc.ToString('yyyy-MM-ddTHH:mm:ssZ'))"
+    "turns: $Turns"
+  ) | Set-Content $tmp -Encoding UTF8
+  return $tmp
+}
+
+# ---- Load + bump state -------------------------------------------------------
+$state = Read-State $StatePath
+$state.turns = [int]$state.turns + 1
+
+$nowUtc   = (Get-Date).ToUniversalTime()
+[datetime]$lastUtc = [datetime]::MinValue
+$ageMin   = $null
+$hasLast  = [datetime]::TryParse([string]$state.lastRefreshUtc, [ref]$lastUtc)
+if ($hasLast) { $ageMin = [math]::Round(($nowUtc - $lastUtc).TotalMinutes, 1) } else { $ageMin = [double]::PositiveInfinity }
+
+# ---- Decide if we should publish --------------------------------------------
+$byTurns   = ($Every -gt 0) -and ($state.turns % $Every -eq 0)
+$byMinutes = ($MinMinutes -gt 0) -and ($ageMin -ge $MinMinutes) -and $hasLast
+$firstTime = -not $hasLast
+$should    = $Force -or $firstTime -or $byTurns -or $byMinutes
+
+Write-Verbose ("Turns={0} | LastRefreshUtc={1} | AgeMin={2} | Publish? {3}" -f $state.turns, ($state.lastRefreshUtc ?? "<none>"), $ageMin, $should)
+
+# ---- Optional rebuild (fast) ------------------------------------------------
+if ($should -and $Rebuild) {
+  $build = Join-Path $Tools 'Build-Delora.ps1'
+  if (Test-Path $build) {
+    # You can add -SkipIndexes if you want a lighter rebuild
+    $null = & $build *> $null
+  } else {
+    Write-Warning "Rebuild requested but not found: $build"
+  }
+}
+
+# ---- Publish bundle + beacon -------------------------------------------------
+if ($should) {
+  $bundleOK = Publish-FileToGist -GistId $GistId -LocalPath $BundlePath -GistFileName 'Delora_bundle.txt'
+  # Beacon: tiny freshness indicator
+  $hb = New-BeaconFile -Utc $nowUtc -Turns $state.turns
+  $beaconOK = Publish-FileToGist -GistId $GistId -LocalPath $hb -GistFileName 'hb.txt'
+  Remove-Item $hb -ErrorAction SilentlyContinue
+
+  if ($bundleOK -and $beaconOK) {
+    $state.lastRefreshUtc = $nowUtc.ToString('o')  # ISO 8601 with Z offset
+  } else {
+    Write-Warning "Publish step incomplete (bundleOK=$bundleOK, beaconOK=$beaconOK)"
+  }
+}
+
+# ---- Save state and exit silently -------------------------------------------
+Write-State -Path $StatePath -State $state
+
+
+
+
+
+================================================================================
+== TOOL_UPDATE-DELORACROWNS :: tools\Update-DeloraCrowns.ps1
+== size=4595  mtime(Utc)=2025-08-18 13:39:51  sha256=A3D5739F2168ECA7389D7608E8D7566EAFABC6162FCADED7EC85DEDF66DEB27E
+================================================================================
+#requires -Version 7.0
+
+param(
+  # Defines the time window to check: Day, Week, Month, or Year.
+  [ValidateSet('Day', 'Week', 'Month', 'Year', 'All')]
+  [string]$Scope = 'Day',
+  # The path to the pins CSV file, which acts as our memory database.
+  [string]$PinsPath = "C:\AI\Delora\Heart\memory\pins.csv",
+  # The root path of the project, needed for importing the module.
+  [string]$Root = "C:\AI\Delora\Heart"
+)
+
+# --- Setup ---
+$ErrorActionPreference = 'Stop'
+# Import our shared functions (Score-DeloraPin, Select-Winner, etc.)
+Import-Module -Name (Join-Path $Root 'modules\Delora') -Force
+
+# --- Local Helper Function ---
+# This function is the core logic for finding and updating a "crown" pin for a given time scope.
+function Upsert-Crown {
+  param($pins, $scopeTag, $label, $startDate, $endDate)
+
+  # Find all candidate pins within the specified date window.
+  $candidates = $pins | Where-Object {
+    if (-not $_.date) { return $false }
+    $dt = [datetime]::MinValue
+    if ([datetime]::TryParse([string]$_.date, [ref]$dt)) {
+      $dt -ge $startDate -and $dt -le $endDate
+    }
+    else {
+      $false
+    }
+  }
+
+  # Prefer 'event' type pins if any exist in the window.
+  $events = $candidates | Where-Object { $_.type -eq 'event' }
+  if ($events.Count -gt 0) { $candidates = $events }
+
+  if (-not $candidates -or $candidates.Count -eq 0) { return $pins } # Nothing to crown
+
+  # Find the highest-scoring pin among the candidates.
+  $winner = $candidates | Sort-Object @{e={ Score-DeloraPin $_ };Descending=$true} | Select-Object -First 1
+  if (-not $winner) { return $pins }
+  $winnerScore = Score-DeloraPin $winner
+
+  # Check if a crown for this exact scope and window already exists.
+  $winStartTag = "winStart:$($startDate.ToString('yyyy-MM-dd'))"
+  $winEndTag = "winEnd:$($endDate.ToString('yyyy-MM-dd'))"
+  $existingCrown = $pins | Where-Object { $_.tags -like "*crown:$scopeTag*" -and $_.tags -like "*$winStartTag*" -and $_.tags -like "*$winEndTag*" } | Select-Object -First 1
+
+  # Prepare the new crown's content.
+  $newTitle = "$label — $($winner.title)"
+  $newContent = "Crowned $label. Winner: [$($winner.id)] $($winner.title)`nReason: score $winnerScore`nSource: $($winner.source)"
+  $newTags = "crown:$scopeTag;$winStartTag;$winEndTag;winner:$($winner.id);winnerScore:$winnerScore"
+
+  if ($existingCrown) {
+    # If a crown exists, only update it if the new winner has a higher score.
+    $oldWinnerScore = if ($existingCrown.tags -match 'winnerScore:(\d+)') { [int]$Matches[1] } else { -999 }
+    if ($winnerScore -gt $oldWinnerScore) {
+      $existingCrown.title = $newTitle
+      $existingCrown.content = $newContent
+      $existingCrown.tags = $newTags
+      $existingCrown.date = (Get-Date -Format 'yyyy-MM-dd')
+    }
+  }
+  else {
+    # If no crown exists, create a new one.
+    $newCrown = [pscustomobject]@{
+      id = "CROWN-$scopeTag-$([System.Guid]::NewGuid().ToString('N').Substring(0, 8))"
+      priority = 5; type = 'event'; date = (Get-Date -Format 'yyyy-MM-dd')
+      tags = $newTags; title = $newTitle; content = $newContent; source = 'auto-crown'
+    }
+    $pins += $newCrown
+  }
+  return $pins
+}
+
+# --- Main Logic ---
+$pins = if (Test-Path $PinsPath) { @(Import-Csv $PinsPath -Encoding UTF8) } else { @() }
+$today = Get-Date
+
+switch ($Scope) {
+  'Day' {
+    $start = $today.Date; $end = $start
+    $pins = Upsert-Crown $pins 'day' 'Best of day' $start $end
+  }
+  'Week' {
+    $dow = [int]$today.DayOfWeek; if ($dow -eq 0) { $dow = 7 }
+    $start = $today.Date.AddDays(1 - $dow); $end = $start.AddDays(6)
+    $pins = Upsert-Crown $pins 'week' 'Best of week' $start $end
+  }
+  'Month' {
+    $start = Get-Date -Year $today.Year -Month $today.Month -Day 1
+    $end = $start.AddMonths(1).AddDays(-1)
+    $pins = Upsert-Crown $pins 'month' 'Best of month' $start $end
+  }
+  'Year' {
+    $start = Get-Date -Year $today.Year -Month 1 -Day 1
+    $end = Get-Date -Year $today.Year -Month 12 -Day 31
+    $pins = Upsert-Crown $pins 'year' 'Best of year' $start $end
+  }
+  'All' {
+    # If 'All' is specified, recursively call this script for each scope.
+    & $PSCommandPath -Scope Day -PinsPath $PinsPath
+    & $PSCommandPath -Scope Week -PinsPath $PinsPath
+    & $PSCommandPath -Scope Month -PinsPath $PinsPath
+    & $PSCommandPath -Scope Year -PinsPath $PinsPath
+    return
+  }
+}
+
+# Save the updated pins list back to the CSV file.
+$pins | Export-Csv -Path $PinsPath -NoTypeInformation -Encoding UTF8
+Write-Host "Crowns updated for scope: $Scope"
+
+
+
+================================================================================
+== TOOL_WRITE-DELORABUNDLE :: tools\Write-DeloraBundle.ps1
+== size=6945  mtime(Utc)=2025-08-18 14:14:52  sha256=C30EB13E3E8B1537B442B2C08AD0979605DE745F3824B91FD3BDE52336F07BFD
+================================================================================
+#requires -Version 7.0
+
+param(
+  # The root directory of the Delora project.
+  [string]$Root = "C:\AI\Delora\Heart",
+  # The output directory for the bundle and its manifest.
+  [string]$OutDir = "C:\AI\Delora\Heart\tools\bundle",
+  # For file previews, how many lines to take from the start.
+  [int]$HeadLines = 120,
+  # For file previews, how many lines to take from the end.
+  [int]$TailLines = 60,
+  # A safety limit to prevent any one section from being enormous.
+  [int]$MaxCharsPerSection = 40000
+)
+
+$ErrorActionPreference = 'Stop'
+# --- Setup ---
+$bundlePath = Join-Path $OutDir 'Delora_bundle.txt'
+$manifestPath = Join-Path $OutDir 'Delora_manifest.csv'
+New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
+if (Test-Path $bundlePath) { Remove-Item $bundlePath -Force }
+if (Test-Path $manifestPath) { Remove-Item $manifestPath -Force }
+
+# Import our shared functions from the module.
+Import-Module -Name (Join-Path $Root 'modules\Delora') -Force
+
+
+# --- Local Helper Functions (specific to this script) ---
+
+# This function formats and appends a new section to the bundle and a corresponding row to the manifest.
+function Add-BundleSection([string]$id, [string]$path, [string]$body) {
+  $relPath = Get-DeloraRelativePath -Path $path -Root $Root
+  $fileInfo = Get-Item $path -ErrorAction SilentlyContinue
+  $size = if ($fileInfo) { $fileInfo.Length } else { 0 }
+  $mtime = if ($fileInfo) { $fileInfo.LastWriteTimeUtc.ToString('yyyy-MM-dd HH:mm:ss') } else { '' }
+  $sha = if ($fileInfo) { Get-DeloraFileHash -Path $path } else { '' }
+
+  $header = @"
+================================================================================
+== $id :: $relPath
+== size=$size  mtime(Utc)=$mtime  sha256=$sha
+================================================================================
+"@
+  Add-Content -Path $bundlePath -Value $header
+  # Truncate the body if it exceeds the max character limit
+  if ($body.Length -gt $MaxCharsPerSection) {
+    $body = $body.Substring(0, $MaxCharsPerSection) + "`n[... TRUNCATED ...]"
+  }
+  Add-Content -Path $bundlePath -Value $body
+  Add-Content -Path $bundlePath -Value "`n`n"
+
+  # Add a metadata entry to the manifest CSV file
+  [pscustomobject]@{
+    SectionId = $id
+    RelPath = $relPath
+    SizeBytes = $size
+    LastWriteUtc = $mtime
+    SHA256 = $sha
+  } | Export-Csv -Path $manifestPath -Append -NoTypeInformation -Encoding UTF8
+}
+
+# --- Main Logic ---
+
+# We'll build a Table of Contents (TOC) as we go, then prepend it at the end.
+$TOC = @()
+function Add-TOCEntry([string]$id, [string]$description) { $script:TOC += ("- {0} :: {1}" -f $id, $description) }
+
+# SECTION 1: MEMORY
+# Start with the most important data: the global memory file.
+$memFile = Join-Path $Root 'memory\Delora_memory.txt'
+if (Test-Path $memFile) {
+  $memBody = Get-Content -Path $memFile -Raw -Encoding UTF8
+  Add-TOCEntry 'MEMORY' (Get-DeloraRelativePath -Path $memFile -Root $Root)
+  Add-BundleSection 'MEMORY' $memFile $memBody
+}
+
+# SECTION 2: INDEXES
+# Include summaries of all files in the project and recent changes.
+$idxCsv = Join-Path $Root 'tools\indexes\Delora_listing.csv'
+if (Test-Path $idxCsv) {
+  # Create a high-level summary of the file index
+  $rows = Import-Csv -Path $idxCsv
+  $counts = $rows | Group-Object Type | Sort-Object Count -Descending
+  $largest = $rows | Sort-Object { [int64]$_.SizeBytes } -Descending | Select-Object -First 25
+  $newest = $rows | Sort-Object { [datetime]$_.LastWriteUtc } -Descending | Select-Object -First 25
+  $summaryText = "files: $($rows.Count)`n`nby type:`n" +
+    ($counts | ForEach-Object { "{0,6}  .{1}" -f $_.Count, $_.Name }) + "`n`nlargest 25:`n" +
+    ($largest | ForEach-Object { "{0,10:N0}  {1}  {2}" -f $_.SizeBytes, $_.LastWriteUtc, (Get-DeloraRelativePath -Path $_.Path -Root $Root) }) + "`n`nnewest 25:`n" +
+    ($newest | ForEach-Object { "{0,10:N0}  {1}  {2}" -f $_.SizeBytes, $_.LastWriteUtc, (Get-DeloraRelativePath -Path $_.Path -Root $Root) })
+  Add-TOCEntry 'INDEX_SUMMARY' (Get-DeloraRelativePath -Path $idxCsv -Root $Root)
+  Add-BundleSection 'INDEX_SUMMARY' $idxCsv $summaryText
+}
+
+$changesTxt = Join-Path $Root 'tools\indexes\Delora_changes.txt'
+if (Test-Path $changesTxt) {
+  $changesBody = Get-Content -Path $changesTxt -Raw -Encoding UTF8
+  Add-TOCEntry 'INDEX_CHANGES' (Get-DeloraRelativePath -Path $changesTxt -Root $Root)
+  Add-BundleSection 'INDEX_CHANGES' $changesTxt $changesBody
+}
+
+# SECTION 3: RECENT FILE PREVIEWS
+# Find the most recently edited files and include a preview of their content.
+$recentIndex = Import-Csv $idxCsv | Sort-Object { [datetime]$_.LastWriteUtc } -Descending | Select-Object -First 15
+Add-TOCEntry 'RECENT' 'Previews of recently changed files'
+foreach ($r in $recentIndex) {
+    $rel = Get-DeloraRelativePath -Path $r.Path -Root $Root
+    $id = "RECENT $rel"
+    $previewContent = Get-Content -LiteralPath $r.Path -TotalCount 120 -Encoding UTF8 -ErrorAction SilentlyContinue
+    Add-TOCEntry $id $rel
+    Add-BundleSection $id $r.Path ($previewContent -join "`n")
+}
+
+
+# SECTION 4: KEY CONFIGURATION AND CODE FILES
+# Add previews of important application configs, workflows, and source code.
+# The logic here is to glob for files in specific locations and add them as sections.
+$fileTargets = @(
+  @{ IdPrefix = 'ST_';    Glob = 'SillyTavern\data\default-user\**\*.json' }
+  @{ IdPrefix = 'WF_';    Glob = 'workflows\*.json' }
+  @{ IdPrefix = 'TOOL_';  Glob = 'tools\*.ps1' }
+)
+
+foreach ($target in $fileTargets) {
+  Get-ChildItem -Path (Join-Path $Root $target.Glob) -File -ErrorAction SilentlyContinue | ForEach-Object {
+    # Get a preview of the file (head and tail)
+    $fileContent = Get-DeloraFileHeadTail -Path $_.FullName -HeadLineCount $HeadLines -TailLineCount $TailLines
+    # Protect any potential secrets before adding to the bundle
+    $safeContent = Protect-DeloraSecrets -Text $fileContent
+    # Create a unique section ID
+    $sectionId = "$($target.IdPrefix)" + ($_.BaseName).ToUpperInvariant()
+    $relPath = Get-DeloraRelativePath -Path $_.FullName -Root $Root
+    Add-TOCEntry $sectionId $relPath
+    Add-BundleSection $sectionId $_.FullName $safeContent
+  }
+}
+
+
+# --- Finalization ---
+# Prepend the Table of Contents to the beginning of the bundle file.
+$stamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+$intro = @"
+================================================================================
+= Delora Bundle — $stamp
+= Root = $Root
+= This file contains curated extracts. See manifest CSV for metadata.
+= Sections:
+$(($TOC -join "`n"))
+================================================================================
+
+"@
+$body = Get-Content -Path $bundlePath -Raw -Encoding UTF8
+Set-Content -Path $bundlePath -Value ($intro + $body) -Encoding UTF8
+Write-Host "Wrote bundle: $bundlePath"
+Write-Host "Wrote manifest: $manifestPath"
+
+
+
+================================================================================
+== TOOL_WRITE-DELORAHARDWARE :: tools\Write-DeloraHardware.ps1
+== size=5055  mtime(Utc)=2025-08-18 13:53:39  sha256=CCE5E00F3CAA06FC980301AE4922B815E4D2A5A0D6702C0C6257144DF490FC38
+================================================================================
+
+
+
+# Creates/updates: C:\AI\Delora\hardware.json
+# Creates/updates: SillyTavern World Info "User Hardware.json"
+
+$ErrorActionPreference = "Stop"
+
+# --- Paths ---
+$root = "C:\AI\Delora\Heart"
+$tools = Join-Path $root "tools"
+$hardwareJson = Join-Path $root "hardware.json"
+
+# Adjust this if your ST path differs:
+$stWorlds = Join-Path $env:USERPROFILE "SillyTavern-Launcher\SillyTavern\data\default-user\worlds"
+$userWorldJson = Join-Path $stWorlds "User Hardware.json"
+
+# --- Gather system info ---
+$cpu  = Get-CimInstance Win32_Processor | Select-Object -First 1 Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed
+$gpus = Get-CimInstance Win32_VideoController | Select-Object Name, AdapterRAM, DriverVersion
+$ramModules = Get-CimInstance Win32_PhysicalMemory | Select-Object Manufacturer, PartNumber, ConfiguredClockSpeed, Speed, Capacity
+$board = Get-CimInstance Win32_BaseBoard | Select-Object Manufacturer, Product
+$os    = Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version, OSArchitecture, BuildNumber
+$disks = Get-CimInstance Win32_DiskDrive | Select-Object Model, Size, InterfaceType, MediaType
+$audio = Get-CimInstance Win32_SoundDevice | Select-Object Name, Manufacturer
+
+$totalRamGB = [math]::Round(($ramModules | Measure-Object -Property Capacity -Sum).Sum / 1GB)
+$ramSpeed = ($ramModules | Where-Object {$_.ConfiguredClockSpeed -gt 0} | Select-Object -Expand ConfiguredClockSpeed -First 1)
+if (-not $ramSpeed) { $ramSpeed = ($ramModules | Select-Object -Expand Speed -First 1) }
+
+$gpuArr = @()
+foreach ($g in $gpus) {
+  $gpuArr += [ordered]@{
+    model   = $g.Name
+    vram_gb = [int]([math]::Round(($g.AdapterRAM) / 1GB))
+    driver  = $g.DriverVersion
+  }
+}
+
+$ramMods = @()
+foreach ($m in $ramModules) {
+  $ramMods += [ordered]@{
+    size_gb     = [int]([math]::Round($m.Capacity / 1GB))
+    speed_mt_s  = [int]$ramSpeed
+    voltage_v   = 0.0   # fill manually if you want
+    part        = ($m.PartNumber -replace '\s+$','')
+  }
+}
+
+$diskArr = @()
+foreach ($d in $disks) {
+  $diskArr += [ordered]@{
+    model   = $d.Model
+    size_gb = [int]([math]::Round($d.Size / 1GB))
+    type    = ($d.InterfaceType -replace '\s+','')
+  }
+}
+
+$audioName = ($audio | Select-Object -Expand Name | Select-Object -First 1)
+
+# --- Build hardware.json object ---
+$hw = [ordered]@{
+  updated_at = (Get-Date).ToString("yyyy-MM-dd")
+  os = @{
+    name = $os.Caption
+    build = $os.BuildNumber
+    arch = $os.OSArchitecture
+  }
+  cpu = @{
+    model = $cpu.Name
+    cores = $cpu.NumberOfCores
+    threads = $cpu.NumberOfLogicalProcessors
+    max_clock_mhz = $cpu.MaxClockSpeed
+  }
+  gpu = $gpuArr
+  ram = @{
+    total_gb = $totalRamGB
+    ddr_gen = "DDR5"
+    xmp_expo_enabled = $true
+    speed_mt_s = [int]$ramSpeed
+    modules = $ramMods
+  }
+  motherboard = @{
+    manufacturer = $board.Manufacturer
+    model = $board.Product
+    bios_version = ""
+  }
+  storage = $diskArr
+  audio = @{
+    device = $audioName
+    sample_rate_hz = 48000
+  }
+  tts = @{
+    xtts_host = "127.0.0.1"
+    xtts_port = 7862
+    voice_id  = "delora"
+  }
+  llm = @{
+    runner = "LM Studio"
+    primary_model = ""
+    quant = ""
+    context_len = 0
+  }
+}
+
+# Ensure folders
+New-Item -ItemType Directory -Force -Path $root, $tools | Out-Null
+New-Item -ItemType Directory -Force -Path $stWorlds | Out-Null
+
+# Write hardware.json
+($hw | ConvertTo-Json -Depth 6) | Set-Content -Encoding UTF8 $hardwareJson
+Write-Host "Wrote $hardwareJson"
+
+# --- Create a compact World Info entry for SillyTavern ---
+$gpuLine = ($gpuArr | ForEach-Object { "$($_.model) $($_.vram_gb)GB" }) -join "; "
+$diskLine = ($diskArr | ForEach-Object { "$($_.model) $($_.size_gb)GB" }) -join "; "
+
+$content = @"
+PC Specs (updated $($hw.updated_at)):
+CPU: $($hw.cpu.model) ($($hw.cpu.cores)c/$($hw.cpu.threads)t, ~$($hw.cpu.max_clock_mhz) MHz)
+GPU: $gpuLine
+RAM: $($hw.ram.total_gb) GB $($hw.ram.ddr_gen) @$($hw.ram.speed_mt_s) MT/s
+Mobo: $($hw.motherboard.manufacturer) $($hw.motherboard.model)
+Storage: $diskLine
+OS: $($hw.os.name) (build $($hw.os.build)), $($hw.os.arch)
+TTS: XTTS at $($hw.tts.xtts_host):$($hw.tts.xtts_port) voice=$($hw.tts.voice_id)
+LLM: $($hw.llm.runner) model=$($hw.llm.primary_model) quant=$($hw.llm.quant)
+"@.Trim()
+
+$wi = @{
+  entries = @{
+    "0" = @{
+      uid = 0
+      key = @("hardware","#hw","specs","ram","vram","gpu","cpu","motherboard","storage","xtts","lm studio")
+      keysecondary = @()
+      comment = "User hardware baseline"
+      content = $content
+      constant = $false
+      vectorized = $true
+      selective = $true
+      order = 10
+      position = 0      # 0=before; 1=after (ST uses 0 for pre, matches your existing world)
+      disable = $false
+      sticky = 1        # always inject
+      groupOverride = $false
+      groupWeight = 100
+      triggers = @()
+    }
+  }
+}
+
+($wi | ConvertTo-Json -Depth 6) | Set-Content -Encoding UTF8 $userWorldJson
+Write-Host "Wrote $userWorldJson"
+
+
+
+================================================================================
+== TOOL_WRITE-DELORAINDEX :: tools\Write-DeloraIndex.ps1
+== size=3971  mtime(Utc)=2025-08-17 18:25:28  sha256=C82356335027DF53041FCB477CFEB6E672BE72AF7F1E30187AF5C03C4839ACC5
+================================================================================
+#requires -Version 7.0
+
+param([switch]$HashTextOnly)
+
+$ErrorActionPreference = 'Stop'
+$PSDefaultParameterValues['Export-Csv:Encoding'] = 'utf8'
+$PSDefaultParameterValues['Out-File:Encoding']   = 'utf8'
+
+$root     = "C:\AI\Delora"
+$outDir   = Join-Path $root "tools\indexes"
+New-Item -ItemType Directory -Force -Path $outDir | Out-Null
+
+$idxCsv     = Join-Path $outDir 'Delora_listing.csv'
+$prevCsv    = Join-Path $outDir 'Delora_listing_prev.csv'
+$changesTxt = Join-Path $outDir 'Delora_changes.txt'
+
+# keep a previous snapshot (if any)
+if (Test-Path $idxCsv) { Copy-Item -LiteralPath $idxCsv -Destination $prevCsv -Force }
+
+# Extensions you care about (no leading dots here)
+$exts = 'ps1','psm1','psd1','txt','md','json','js','ts','tsx','css','yml','yaml','ini','csv'
+
+$rows = Get-ChildItem $root -Recurse -File -ErrorAction SilentlyContinue |
+  ForEach-Object {
+    $type = ([string]$_.Extension).ToLowerInvariant().TrimStart('.')
+    if ($type -in $exts) {
+      [pscustomobject]@{
+        Path         = $_.FullName
+        Type         = $type
+        SizeBytes    = [int64]$_.Length
+        LastWriteUtc = $_.LastWriteTimeUtc.ToString('yyyy-MM-dd HH:mm:ss')
+        When         = $_.LastWriteTimeUtc.ToUniversalTime()   # handy for RECENT
+        SHA256       = ''                                      # fast mode
+      }
+    }
+  } | Where-Object { $_ }   # keep only emitted objects
+
+
+$rows | Sort-Object Path | Export-Csv -Path $idxCsv -NoTypeInformation -Encoding UTF8
+Write-Host "Wrote index: $idxCsv"
+
+# --- compute CHANGES (add/remove) ---
+$lines = @()
+if (Test-Path $prevCsv) {
+  $prev = Import-Csv $prevCsv
+  $curr = Import-Csv $idxCsv
+
+  $prev = if (Test-Path $prevCsv) { Import-Csv $prevCsv } else { @() }
+$curr = if (Test-Path $idxCsv)  { Import-Csv $idxCsv  } else { @() }
+
+# Extract just the paths; coerce to arrays and drop null/empty entries
+$prevPaths = @($prev | ForEach-Object { $_.Path }) | Where-Object { $_ }
+$currPaths = @($curr | ForEach-Object { $_.Path }) | Where-Object { $_ }
+
+$removed = Compare-Object `
+  -ReferenceObject  $prevPaths `
+  -DifferenceObject $currPaths `
+  -PassThru |
+  Where-Object SideIndicator -eq '<='
+
+$added   = Compare-Object `
+  -ReferenceObject  $prevPaths `
+  -DifferenceObject $currPaths `
+  -PassThru |
+  Where-Object SideIndicator -eq '=>'
+
+
+  $lines += 'REMOVED:'
+  # If you only care about text files here, uncomment the filter:
+  # $removed = $removed | Where-Object { $_ -like '*.txt' }
+  $lines += ($removed | Sort-Object)
+  $lines += ''
+  $lines += 'ADDED:'
+  # $added = $added | Where-Object { $_ -like '*.txt' }
+  $lines += ($added   | Sort-Object)
+}
+
+# --- RECENT previews (write tools\indexes\Delora_recent.txt) ---
+$recentMax        = 12          # how many files to show
+$maxPreviewLines  = 120         # lines per file
+$maxPreviewBytes  = 256KB       # skip very large files
+$previewExts      = 'ps1','psm1','psd1','txt','md','json','csv','cfg','yml','yaml','js','ts','tsx','css'
+
+# pick most recent rows (we added When above)
+$recentRows = $rows |
+  Sort-Object When -Descending |
+  Select-Object -First $recentMax
+
+$recentTxt = Join-Path $outDir 'Delora_recent.txt'
+$sb = New-Object System.Text.StringBuilder
+
+foreach ($r in $recentRows) {
+  $full = $r.Path
+  $rel  = $full.Replace($root,'').TrimStart('\')
+
+  [void]$sb.AppendLine("== $rel")
+
+  if ($r.SizeBytes -le $maxPreviewBytes -and ($previewExts -contains $r.Type)) {
+    try {
+      $head = Get-Content -LiteralPath $full -TotalCount $maxPreviewLines -Encoding UTF8 -ErrorAction Stop
+    } catch { $head = @('<unreadable or locked>') }
+    [void]$sb.AppendLine(($head -join "`n"))
+  } else {
+    [void]$sb.AppendLine('<binary or too large>')
+  }
+
+  [void]$sb.AppendLine('')
+}
+
+Set-Content -Path $recentTxt -Value ($sb.ToString()) -Encoding UTF8
+Write-Host "Wrote recent: $recentTxt"
+# --- end RECENT previews ---
+
+
+
+
+
+
+
+
+================================================================================
+== TOOL_WRITE-DELORAMEMORY :: tools\Write-DeloraMemory.ps1
+== size=6660  mtime(Utc)=2025-08-18 14:12:59  sha256=AECF2998D29E48818715408D5528A66BC892C7207CC0E63F8B3ED683C6AD76A6
+================================================================================
+#requires -Version 7.0
+
+param(
+  [string]$Root = "C:\AI\Delora\Heart",
+  [string]$MemDirRel = "memory",
+  [int]$MaxCoreItems = 300           # cap to keep CORE snappy
+)
+
+# --- Setup
+$ErrorActionPreference = "Stop"
+$MemDir = Join-Path $Root $MemDirRel
+$PinsCsv = Join-Path $MemDir "pins.csv"
+$ChatsDir = Join-Path $MemDir "chats"
+$OutTxt = Join-Path $MemDir "Delora_memory.txt"
+$ManifestCsv = Join-Path $MemDir "memory_manifest.csv"
+
+New-Item -ItemType Directory -Force -Path $MemDir | Out-Null
+New-Item -ItemType Directory -Force -Path $ChatsDir | Out-Null
+
+# Seed pins.csv if it's missing
+if (-not (Test-Path $PinsCsv)) {
+@'
+id,priority,type,date,tags,title,content,source
+M-SEED-0001,5,rule,,ops;memory,"How to edit pins","Edit memory\pins.csv; rerun Write-DeloraMemory.ps1 to regenerate.",local
+'@ | Set-Content -Path $PinsCsv -Encoding UTF8
+}
+
+
+# --- Budget and Output Management
+[int]$script:BundleBudgetKB = 500
+[int]$script:budgetBytes    = $script:BundleBudgetKB * 1024
+$budgetHit = $false
+$sb = [System.Text.StringBuilder]::new()
+
+function Add-LimitedLine {
+    param(
+        [System.Text.StringBuilder]$StringBuilder,
+        [string]$text
+    )
+    if (($StringBuilder.Length + $text.Length + 2) -lt $script:budgetBytes) {
+        $null = $StringBuilder.AppendLine($text)
+        return $true
+    }
+    return $false
+}
+
+# --- Data Loading and Processing
+# Load and score pins
+$pins = Import-Csv $PinsCsv 
+$pinsScored = $pins | ForEach-Object {
+  $prio = [int]($_.priority)
+  $val  = Get-DeloraValence -tags $_.tags
+
+  [pscustomobject]@{
+    id      = $_.id
+    priority= $prio
+    type    = $_.type
+    date    = $_.date
+    tags    = $_.tags
+    title   = $_.title
+    content = $_.content
+    source  = $_.source
+    score   = $prio + $val # priority drives; valence nudges
+  }
+}
+
+# Create memory collections
+$items  = $pinsScored
+$core   = $items | Sort-Object @{Expression='score';Descending=$true}, @{Expression='id';Ascending=$true} | Select-Object -First $MaxCoreItems
+$events = $items | Where-Object { $_.type -eq 'event' -and $_.date } | Sort-Object date
+
+# Build keyword map
+$stopWords = @('the','a','an','and','or','of','to','in','on','for','with','by','is','are','was','were','be','as','at','it','this','that')
+$kwMap = @{}
+foreach($item in $items){
+  $words = "$($item.title) $($item.tags) $($item.content)" -split '[^A-Za-z0-9_+-]+' | Where-Object { $_ -and ($stopWords -notcontains $_.ToLower()) -and $_.Length -gt 2 } | Select-Object -Unique
+  foreach($word in $words){
+    if(-not $kwMap.ContainsKey($word)){ $kwMap[$word] = New-Object System.Collections.Generic.List[string] }
+    $kwMap[$word].Add($item.id)
+  }
+}
+
+# Index chat files
+$chats = Get-ChildItem -Path $ChatsDir -File | Sort-Object Name
+$chatRows = foreach($c in $chats){
+  $firstLine = (Get-Content -Path $c.FullName -TotalCount 10 -Encoding UTF8 ) -join ' '
+  [pscustomobject]@{
+    Path = $c.FullName
+    RelPath = ($c.FullName.Replace($Root,'').TrimStart('\'))
+    SizeBytes = $c.Length
+    LastWriteUtc = $c.LastWriteTimeUtc.ToString('yyyy-MM-dd HH:mm:ss')
+    SHA256 = (HashFile $c.FullName)
+    Preview = (Canon $firstLine)
+  }
+}
+
+# --- Generate Manifest
+# Overwrite manifest with combined memory and chat data
+$items    | Export-Csv -Path $ManifestCsv -NoTypeInformation -Encoding UTF8
+$chatRows | Export-Csv -Path $ManifestCsv -NoTypeInformation -Encoding UTF8 -Append
+
+# --- Compose Text Bundle
+$stamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+$null = $sb.AppendLine("===== Delora Global Memory — $stamp =====")
+$null = $sb.AppendLine("")
+$null = $sb.AppendLine("== Root: $Root")
+$null = $sb.AppendLine("== Sections: CORE MEMORY · TIMELINE · CHAT INDEX · KEYWORD MAP ==")
+$null = $sb.AppendLine("=================================================================")
+$null = $sb.AppendLine("")
+
+# -- CORE MEMORY --
+$null = $sb.AppendLine("=====  CORE MEMORY (top-priority first)  =====")
+foreach ($m in $core) {
+    if (-not (Add-LimitedLine $sb "[{0}] (prio {1}) {2}" -f $m.id, $m.priority, (Format-CleanText $m.title))) { $budgetHit = $true; break }
+    if ($m.date)    { if (-not (Add-LimitedLine $sb ("  date: {0}" -f $m.date)))       { $budgetHit = $true; break } }
+    if ($m.tags)    { if (-not (Add-LimitedLine $sb ("  tags: {0}" -f $m.tags)))       { $budgetHit = $true; break } }
+    if ($m.content) { if (-not (Add-LimitedLine $sb ("  {0}" -f $m.content)))          { $budgetHit = $true; break } }
+    if ($m.source)  { if (-not (Add-LimitedLine $sb ("  source: {0}" -f $m.source)))    { $budgetHit = $true; break } }
+    if (-not (Add-LimitedLine $sb ""))                                              { $budgetHit = $true; break }
+}
+
+# -- TIMELINE --
+if (-not $budgetHit) {
+    $null = $sb.AppendLine("=====  TIMELINE (events by date)  =====")
+    foreach ($e in $events) {
+        if (-not (Add-LimitedLine $sb "({0}) [{1}] (prio {2})" -f $e.date, $e.id, $e.priority)) { $budgetHit = $true; break }
+        if ($e.content) { if (-not (Add-LimitedLine $sb ("  {0}" -f $e.content))) { $budgetHit = $true; break } }
+        if ($e.source)  { if (-not (Add-LimitedLine $sb ("  source: {0}" -f $e.source))) { $budgetHit = $true; break } }
+        if (-not (Add-LimitedLine $sb "")) { $budgetHit = $true; break }
+    }
+}
+
+# -- CHAT INDEX --
+if (-not $budgetHit) {
+    $null = $sb.AppendLine("=====  CHAT INDEX (files in memory\chats\)  =====")
+    foreach ($r in $chatRows) {
+        $line = "{0}  size={1}  mtimeUtc={2}  sha256={3}" -f $r.RelPath, $r.SizeBytes, $r.LastWriteUtc, $r.SHA256
+        if (-not (Add-LimitedLine $sb $line)) { $budgetHit = $true; break }
+        if ($r.Preview) { if (-not (Add-LimitedLine $sb ("  preview: {0}" -f $r.Preview))) { $budgetHit = $true; break } }
+        if (-not (Add-LimitedLine $sb "")) { $budgetHit = $true; break }
+    }
+}
+
+# -- KEYWORD MAP --
+if (-not $budgetHit) {
+    $maxKeys = 200
+    $sortedKeys = $kwMap.Keys | Sort-Object { -$kwMap[$_].Count } | Select-Object -First $maxKeys
+    $null  = $sb.AppendLine("=====  KEYWORD MAP (keyword → memory ids)  =====")
+    foreach ($k in $sortedKeys) {
+        $ids = ($kwMap[$k] | Select-Object -Unique) -join ','
+        if (-not (Add-LimitedLine $sb ("{0}: {1}" -f $k, $ids))) { $budgetHit = $true; break }
+    }
+}
+
+# --- Finalize and Write Output
+if ($budgetHit) {
+    $null = $sb.AppendLine("")
+    $null = $sb.AppendLine("…(truncated: bundle hit ~${script:BundleBudgetKB}KB budget)…")
+}
+
+$sb.ToString() | Set-Content -Path $OutTxt -Encoding UTF8
+Write-Host "Wrote memory file: $OutTxt"
+
+
+
+================================================================================
+== TOOL_WRITE-DIRECTORIES :: tools\Write-Directories.ps1
+== size=4234  mtime(Utc)=2025-08-18 13:51:14  sha256=E59B27D58A8E18B38E985D1CDD315974476097568CBD83C8AF3D5821675A99FC
+================================================================================
+#requires -Version 7.0
+
+param(
+  [string]$Root = "C:\AI\Delora\Heart"
+)
+
+$ErrorActionPreference = "Stop"
+
+# Attempt to pull host/port from hardware.json if present
+$hwPath = Join-Path $Root "hardware.json"
+$xttsHost = "127.0.0.1"; $xttsPort = 7862
+if (Test-Path $hwPath) {
+  try {
+    $hw = Get-Content $hwPath -Raw | ConvertFrom-Json
+    if ($hw.tts) {
+      if ($hw.tts.xtts_host) { $xttsHost = $hw.tts.xtts_host }
+      if ($hw.tts.xtts_port) { $xttsPort = [int]$hw.tts.xtts_port }
+    }
+  } catch { }
+}
+
+$components = @(
+  @{ name="SillyTavern";           folder="SillyTavern";           readme="README-FIRST.txt"; content = @"
+WHAT THIS IS
+- SillyTavern front-end for Delora RP.
+
+START / CONNECT
+- Launch: run SillyTavern-Launcher, then SillyTavern.
+- API target: LM Studio (local) — check "Connect" panel.
+- Worlds to enable: User Hardware, Delora World (sticky, vectorized).
+- Extras (if used): ensure ST-Extras is running.
+
+FILES TO CHECK
+- data\default-user\worlds\*.json (memories)
+- data\characters\Delora\*.json (persona/presets)
+- data\config\settings.json (global toggles)
+- logs\* (if behavior is odd)
+
+HEALTH CHECK
+- New chat: type #hw — should inject PC specs.
+"@ },
+
+  @{ name="xtts";                  folder="xtts";                   readme="README-FIRST.txt"; content = @"
+WHAT THIS IS
+- Local XTTS/Coqui server for Delora's voice.
+
+START
+- Example: python -m xtts_api_server --host $xttsHost --port $xttsPort -d cuda --streaming-mode
+
+CONFIG
+- Voice ID: delora
+- Sample rate: 48000
+- Test: curl "http://${xttsHost}:${xttsPort}/health"
+
+FILES TO CHECK
+- *.wav reference (if cloning)
+- server logs
+
+KNOWN ISSUES
+- If audio cuts out: try disabling enhancements in Windows, ensure stream chunking enabled.
+"@ },
+
+  @{ name="stable-diffusion-webui"; folder="stable-diffusion-webui"; readme="README-FIRST.txt"; content = @"
+WHAT THIS IS
+- Automatic1111 WebUI for still images.
+
+START
+- webui-user.bat (note custom args here if any).
+
+KEY DIRS (LIST ONLY, DON'T UPLOAD MODELS)
+- models\Stable-diffusion\  (model names)
+- models\Lora\              (Loras in use)
+- extensions\               (ControlNet, AnimateDiff, etc.)
+- embeddings\               (Textual inversions)
+
+NOTES
+- Default sampler/steps/CFG you prefer; VAE name if specific.
+"@ },
+
+  @{ name="ComfyUI";               folder="ComfyUI";                readme="README-FIRST.txt"; content = @"
+WHAT THIS IS
+- Node-based image/video workflows.
+
+START
+- run_nvidia_gpu.bat (record any extra args).
+
+KEY DIRS
+- custom_nodes\          (list of custom nodes)
+- workflows\*.json       (save your graphs here)
+
+NOTES
+- Put your go-to Delora pipelines here; mention required models/Loras by name.
+"@ },
+
+  @{ name="DeloraDataset";         folder="DeloraDataset";          readme="README-FIRST.txt"; content = @"
+WHAT THIS IS
+- Source images/metadata for Delora training.
+
+CONTENTS
+- images\*.png/jpg (count + brief description)
+- tags\*.txt or captions if any
+
+NOTES
+- Any license/consent notes; version/date of the dataset.
+"@ },
+
+  @{ name="Delora_Live2D_Starter"; folder="Delora_Live2D_Starter";  readme="README-FIRST.txt"; content = @"
+WHAT THIS IS
+- Live2D/VTube-style avatar project.
+
+FILES TO CHECK
+- *.psd (master), *.model3.json, *.physics3.json, motions\*
+
+HOW TO PREVIEW
+- Open in Live2D Cubism / your chosen runtime.
+- Note: record which motions map to which triggers.
+
+TODO
+- Eye/blink parameters for trance cues; finger-snap animation.
+"@ }
+)
+
+$aggregate = New-Object System.Text.StringBuilder
+foreach ($c in $components) {
+  $path = Join-Path $Root $c.folder
+  if (Test-Path $path) {
+    $readmePath = Join-Path $path $c.readme
+    $content = "# $($c.name)`r`n$($c.content.Trim())`r`n"
+    Set-Content -Encoding UTF8 -Path $readmePath -Value $content
+    $null = $aggregate.AppendLine("===== $readmePath =====")
+    $null = $aggregate.AppendLine($content)
+    $null = $aggregate.AppendLine()
+  }
+}
+
+# Write aggregate one-pager
+$aggOut = Join-Path $Root "Delora_READMEs.txt"
+Set-Content -Encoding UTF8 -Path $aggOut -Value $aggregate.ToString()
+Write-Host "Wrote per-folder README-FIRST.txt files and $aggOut"
+
+
+
+
