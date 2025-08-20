@@ -10,7 +10,7 @@ param(
 
 # --- Setup ---
 $ErrorActionPreference = "SilentlyContinue"
-$statePath = Join-Path $Root 'state.json'
+$statePath = Join-Path $Root 'Time\Pulse\pulse.json'
 
 # --- Helper Functions ---
 function Read-State {
