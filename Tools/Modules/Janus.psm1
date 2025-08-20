@@ -1,46 +1,89 @@
-Set-StrictMode -Version Latest
+# Janus.psm1
+# This module contains the high-level application logic for the Janus AI project,
+# such as memory scoring and content analysis.
 
-# Module-scoped paths
-$script:Root  = 'C:\AI\Delora\Heart'
-$script:State = Join-Path $script:Root 'state.json'
-$script:HbLog = Join-Path $script:Root 'hb.jsonl'
-$script:Pins  = Join-Path $script:Root 'Memory\pins.csv'
+# --- Content Analysis & Scoring ---
 
-function Get-DeloraState {
-  if (Test-Path $script:State) { Get-Content $script:State -Raw | ConvertFrom-Json }
-  else { [pscustomobject]@{ turns=0; lastRefreshUtc='' } }
+function Get-JanusValence {
+<#
+.SYNOPSIS
+  Parses a 'valence:+N' score from a tags string.
+#>
+  param(
+    [string]$Tags
+  )
+  if ($Tags -match 'valence:\s*([+\-]?\d+)') { return [int]$Matches[1] }
+  return 0
 }
 
-function Set-DeloraState([object]$State) {
-  $State | ConvertTo-Json | Set-Content $script:State -Encoding UTF8
+function Get-JanusTries {
+<#
+.SYNOPSIS
+  Parses a 'tries:N' count from a tags string.
+#>
+  param(
+    [string]$Tags
+  )
+  if ($Tags -match 'tries:\s*(\d+)') { return [int]$Matches[1] }
+  return 0
 }
 
-function Add-DeloraHeartbeat([string]$Utc, [int]$Turns, [string]$Source='hb') {
-  $obj = [pscustomobject]@{ utc=$Utc; turns=$Turns; source=$Source }
-  $obj | ConvertTo-Json -Compress | Add-Content $script:HbLog -Encoding UTF8
-}
-
-function Import-DeloraPins {
-  if (Test-Path $script:Pins) { Import-Csv $script:Pins } else { @() }
-}
-
-function Export-DeloraPins([object[]]$Rows) {
-  if ($Rows -and $Rows.Count) {
-    $Rows | Export-Csv -Path $script:Pins -NoTypeInformation -Encoding UTF8
+function Get-JanusEffortBonus {
+<#
+.SYNOPSIS
+  Calculates a score bonus based on an 'effort:HH:MM' tag.
+#>
+  param(
+    [string]$Tags
+  )
+  if ($Tags -match 'effort:\s*(\d+):(\d+)') {
+    $mins = ([int]$Matches[1] * 60) + [int]$Matches[2]
+    if ($mins -ge 120) { return 2 }
+    if ($mins -ge 30) { return 1 }
   }
+  return 0
 }
 
-function Clear-DeloraText([string]$s) {
-  if (-not $s) { return '' }
-  ($s -replace '[\u0000-\u001F]','' -replace "\r?\n",' ').Trim()
+function Test-JanusHasAnyTag {
+<#
+.SYNOPSIS
+  Checks if a tag string contains any of the specified keywords.
+#>
+  param(
+    [string]$Tags,
+    [string[]]$TagSet
+  )
+  foreach ($k in $TagSet) {
+    # Use word boundary '\b' to match whole words only
+    if ($Tags -match "\b$([regex]::Escape($k))\b") { return $true }
+  }
+  return $false
 }
 
-# Correct and Recommended
-Export-ModuleMember -Function @(
-    'Get-DeloraState'
-    'Set-DeloraState'
-    'Add-DeloraHeartbeat'
-    'Import-DeloraPins'
-    'Export-DeloraPins'
-    'Clear-DeloraText'
-)
+function Measure-JanusPinScore {
+<#
+.SYNOPSIS
+  Calculates a comprehensive "importance" score for a memory pin.
+#>
+  param(
+    [object]$Pin
+  )
+  $prio = 0; try { $prio = [int]$Pin.priority } catch {}
+  $tags = [string]$Pin.tags
+  $score = $prio + (Get-JanusValence $tags)
+  
+  # Add bonuses for impactful tags
+  if (Test-JanusHasAnyTag -Tags $tags -TagSet @('milestone', 'rule', 'automation', 'publish', 'recall')) { $score += 1 }
+  if (Test-JanusHasAnyTag -Tags $tags -TagSet @('first', 'breakthrough', 'unblocked')) { $score += 1 }
+  if ($Pin.type -eq 'event') { $score += 1 }
+  
+  # Add bonuses for effort
+  $score += Get-JanusTries $tags
+  $score += Get-JanusEffortBonus $tags
+
+  return $score
+}
+
+
+# --- Final Export ---
+Export-ModuleMember -Function *
