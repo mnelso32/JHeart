@@ -1,0 +1,22 @@
+===== Janus Core Memory — 2025-08-20 06:00:18 =====
+== Root: C:\AI\Janus\JHeart
+=================================================================
+
+--- CORE MEMORY (top priority first) ---
+[J-CROWN-DAY-20250820] (prio 5) Crown (Day): Project Janus Build System Finalized
+[J-PIN-20250820055642] (prio 3) Project Janus Build System Finalized
+[J-PIN-20250820055953] (prio 3) Project Janus Build System Finalized
+[J-SEED-0001] (prio 5) How to edit pins
+
+--- CHAT INDEX (files in Heart-Memories/chats) ---
+[J-CHAT-20250820060018] 2025-08-20 .\Add-JanusPin.ps1 -Type "event" -Title "Project Janus Build System Finalized" -Content "Completed the final refactoring of all core PowerShell scripts. The build process is now stable." -Tags "milestone;ops;janus"
+
+--- KEYWORD MAP (from memory ids) ---
+                     :: J-SEED-0001, J-PIN-20250820055642, J-PIN-20250820055953
+                     :: J-SEED-0001
+                     :: J-CROWN-DAY-20250820
+                     :: J-CROWN-DAY-20250820
+                     :: J-CROWN-DAY-20250820
+                     :: J-PIN-20250820055642, J-PIN-20250820055953
+                     :: J-PIN-20250820055642, J-PIN-20250820055953
+

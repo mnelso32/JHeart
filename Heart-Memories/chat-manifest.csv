@@ -1,0 +1,2 @@
+"id","date","time_utc","tags","title","path"
+"J-CHAT-20250820060018","2025-08-20","10:00:18","chat",".\Add-JanusPin.ps1 -Type ""event"" -Title ""Project Janus Build System Finalized"" -Content ""Completed the final refactoring of all core PowerShell scripts. The build process is now stable."" -Tags ""milestone;ops;janus""","C:\AI\Janus\JHeart\Heart-Memories\chats\J-CHAT-20250820060018.txt"

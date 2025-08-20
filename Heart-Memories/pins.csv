@@ -1,0 +1,5 @@
+"id","priority","type","date","tags","title","content","source"
+"J-SEED-0001","5","rule","","ops;memory","How to edit pins","Edit Heart-Memories/pins.csv and run Write-JanusMemory.ps1 to regenerate.","local"
+"J-CROWN-DAY-20250820","5","crown","2025-08-20","crown;crown-day;winner:J-PIN-20250820055642","Crown (Day): Project Janus Build System Finalized","The most significant event for this Day was 'Project Janus Build System Finalized' (J-PIN-20250820055642) with a score of 5.","Update-JanusCrowns.ps1"
+"J-PIN-20250820055642","3","event","2025-08-20","milestone;ops;janus","Project Janus Build System Finalized","Completed the final refactoring of all core PowerShell scripts. The build process is now stable.","manual"
+"J-PIN-20250820055953","3","event","2025-08-20","milestone;ops;janus","Project Janus Build System Finalized","Completed the final refactoring of all core PowerShell scripts. The build process is now stable.","manual"

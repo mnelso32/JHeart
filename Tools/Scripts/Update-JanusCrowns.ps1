@@ -12,8 +12,8 @@ $ErrorActionPreference = "Stop"
 $toolsDir = Join-Path $Root "Tools"
 $memDir = Join-Path $Root "Heart-Memories"
 $pinsCsv = Join-Path $Root "Heart-Memories\pins.csv"
-$modulePath = Join-Path $toolsDir 'Modules\Janus.psm1'
-Import-Module -Name $modulePath -Force
+$logicModulePath = Join-Path $Root 'Tools\Modules\Janus.psm1'
+Import-Module -Name $logicModulePath -Force
 
 # --- Main Logic ---
 Write-Host "Updating $Scope crowns..." -ForegroundColor Cyan
@@ -37,7 +37,14 @@ if ($Scope -eq 'Week') {
 $candidates = $pins | Where-Object {
     $_.type -eq 'event' -and $_.date -and ([datetime]$_.date -ge $startDate) -and ([datetime]$_.date -le $endDate)
 }
-if ($candidates.Count -eq 0) { Write-Host "No 'event' pins found for this $Scope to crown."; return }
+
+# --- CORRECTED SECTION: Add safety check for empty candidates list ---
+if ($candidates.Count -eq 0) {
+    Write-Host "No 'event' pins found for this $Scope to crown. Exiting gracefully."
+    return # Exit the script if there's nothing to do
+}
+# --- End of corrected section ---
+
 $winner = $candidates | Sort-Object @{Expression={ Measure-JanusPinScore $_ }; Descending=$true} | Select-Object -First 1
 $winnerScore = Measure-JanusPinScore $winner
 
@@ -46,11 +53,9 @@ $crownId = "J-CROWN-$($Scope.ToUpper())-{0:yyyyMMdd}" -f $startDate
 $existingCrown = $pins | Where-Object { $_.id -eq $crownId }
 
 if ($existingCrown) {
-    # Crown already exists, check if new winner is better
     $oldWinnerId = if ($existingCrown.tags -match 'winner:([^;]+)') { $Matches[1] } else { '' }
     $oldWinner = $pins | Where-Object { $_.id -eq $oldWinnerId }
     $oldScore = if ($oldWinner) { Measure-JanusPinScore $oldWinner } else { -999 }
-
     if ($winnerScore -gt $oldScore) {
         Write-Host "New winner found for $Scope crown with a higher score." -ForegroundColor Yellow
         $existingCrown.tags = "crown;crown-$($Scope.ToLower());winner:$($winner.id)"
@@ -61,10 +66,8 @@ if ($existingCrown) {
         return
     }
 } else {
-    # No crown exists, create a new one
     $newCrown = [pscustomobject]@{
-        id = $crownId
-        priority = 5; type = 'crown'; date = '{0:yyyy-MM-dd}' -f $today
+        id = $crownId; priority = 5; type = 'crown'; date = '{0:yyyy-MM-dd}' -f $today
         tags = "crown;crown-$($Scope.ToLower());winner:$($winner.id)"
         title = "Crown ($Scope): $($winner.title)"
         content = "The most significant event for this $Scope was '$($winner.title)' ($($winner.id)) with a score of $winnerScore."

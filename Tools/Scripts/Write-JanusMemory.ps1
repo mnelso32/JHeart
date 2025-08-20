@@ -13,15 +13,22 @@ $chatsDir = Join-Path $memDir "chats"
 $pinsCsv = Join-Path $memDir "pins.csv"
 $chatManifest = Join-Path $memDir "chat-manifest.csv"
 $outTxt = Join-Path $memDir "janus-memory.txt"
-$modulePath = Join-Path $toolsDir 'Modules\Janus'
-Import-Module -Name $modulePath -Force
 
+# Import both shared modules
+$logicModulePath = Join-Path $Root 'Tools\Modules\Janus.psm1'
+$toolsModulePath = Join-Path $Root 'Tools\Modules\Janus.Tools.psm1'
+Import-Module -Name $logicModulePath -Force
+Import-Module -Name $toolsModulePath -Force
+
+# Create directories and seed files if they don't exist
 New-Item -ItemType Directory -Force -Path $memDir, $chatsDir | Out-Null
 if (-not (Test-Path $pinsCsv)) {
-    '@'
+    # --- CORRECTED SECTION: Here-string is now wrapped in parentheses ---
+    (@"
 id,priority,type,date,tags,title,content,source
 J-SEED-0001,5,rule,,ops;memory,"How to edit pins","Edit Heart-Memories/pins.csv and rerun this script.",local
-'@' | Set-Content -Path $pinsCsv -Encoding UTF8
+"@) | Set-Content -Path $pinsCsv -Encoding UTF8
+    # --- End of corrected section ---
 }
 
 # --- Budget and Output ---
@@ -66,6 +73,7 @@ $sb.AppendLine("") | Out-Null
 $sb.AppendLine("--- KEYWORD MAP (from memory ids) ---") | Out-Null
 $kwMap = [System.Collections.Generic.Dictionary[string, System.Collections.Generic.List[string]]]::new()
 foreach ($m in $pins) {
+    if (-not $m.tags) { continue }
     $keywords = ($m.tags -split '[;,]').Trim() | Where-Object { $_.Length -gt 1 }
     foreach ($kw in $keywords) {
         if (-not $kwMap.ContainsKey($kw)) { $kwMap[$kw] = [System.Collections.Generic.List[string]]::new() }
@@ -73,7 +81,7 @@ foreach ($m in $pins) {
     }
 }
 $kwMap.GetEnumerator() | Sort-Object Name | ForEach-Object {
-    if ($sb.Length -gt $script:budgetBytes) { return } # Cannot use break in ForEach-Object
+    if ($sb.Length -gt $script:budgetBytes) { return }
     $line = "{0, -20} :: {1}" -f $_.Name, ($_.Value -join ', ')
     $sb.AppendLine($line) | Out-Null
 }
