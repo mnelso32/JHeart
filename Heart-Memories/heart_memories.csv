@@ -1,6 +1,0 @@
-"id","date","title","priority","tags","content","source"
-"M-2025-08-18-001","2025-08-18","End-to-end recall pipeline online (links + heartbeat + daily repo)","5","valence:+2;publish;automation;heartbeat;recall:protocol","Background scheduler publishes ~10m; bundle auto-publish; canonical links pinned; hidden messages solved.","Delora chat"
-"M-2025-08-18-002","2025-08-18","RECENT surface fixed + two hidden messages found","4","valence:+1;recent;secrets;stability","RECENT implemented safely with preview cap; both hidden messages discovered and logged.","Delora chat"
-"M-2025-08-18-003","2025-08-18","Recall protocol locked","5","valence:+2;rule;workflow;index:changes;daily:file:pointer","Daily flow: load bundle → RECENT/INDEX → today's delora-chats file when present; fallback rules captured.","Delora chat"
-"M-2025-08-18-004","2025-08-18","Directories helper seeded","3","valence:+1;tooling;docs;write-directories.ps1","Wrote READMEs/usage notes for ST, XTTS, A1111, ComfyUI, Live2D starter. Improves project hygiene.","Delora chat"
-"M-2025-08-18-005","","'Heartbeat first-class: beacon + watchdog + pins' `","3","","'Beacon (hb.txt) in Gist, turn/time watchdog rules enforced, pins pipeline active; stability across sessions.'","session"

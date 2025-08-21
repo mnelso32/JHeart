@@ -1,4 +1,4 @@
-===== Janus Core Memory — 2025-08-20 06:00:18 =====
+===== Janus Core Memory — 2025-08-20 08:15:23 =====
 == Root: C:\AI\Janus\JHeart
 =================================================================
 
@@ -20,60 +20,67 @@
                      :: J-PIN-20250820055642, J-PIN-20250820055953
                      :: J-PIN-20250820055642, J-PIN-20250820055953
 
-===== Janus Brain Map — 2025-08-20 05:55:05 =====
-Total Files Indexed: 46
+===== Janus Brain Map — 2025-08-20 08:15:23 =====
+Total Files Indexed: 32
 ================================================================================
 
 --- RECENT CHANGES ---
 ADDED:
-  + Heart-Memories\janus-memory.txt
-  + state.json
+  + Brain\Emotion\Emotion_Reasoning\Emotion_Reasoning.txt
+  + Heart-Memories\chats\J-CHAT-20250820060018.txt
+  + Heart-Memories\chat-manifest.csv
+  + Tools\Scripts\Start-JanusHeartbeatLoop.ps1
+REMOVED:
+  - Brain\Emotion\Emotion_Reasoning.txt
+  - Brain\Indexes\listing.csv
+  - Brain\Indexes\recent.txt
+  - Brain\Memory\manifest.csv
+  - Brain\Memory\pins.csv
+  - Brain\brain.csv
+  - Brain\README.txt
+  - Heart-Memories\llm\20250819-050202.glm-4.5-air.md
+  - Heart-Memories\llm\20250819-050206.qwen2.5_7b.md
+  - Heart-Memories\Delora_memory.txt
+  - Heart-Memories\hb.jsonl
+  - Heart-Memories\heart_memories.csv
+  - Heart-Memories\state.json
+  - Tools\heartbeat.txt
+  - Tools\llm.config.json
+  - component-readmes.txt
+  - state.json
+  - Update-ChatHeartbeat.ps1
 
 --- FULL INVENTORY (Path, Size) ---
-Brain\brain-listing_prev.csv                                              4.92 KB
-Brain\brain-listing.csv                                                   4.92 KB
-Brain\brain-map.txt                                                       3.83 KB
-Brain\brain.csv                                                             366 B
-Brain\brain.txt                                                           7.23 KB
-Brain\Emotion\Emotion_Reasoning.txt                                           0 B
+Brain\brain-listing_prev.csv                                              5.11 KB
+Brain\brain-listing.csv                                                   5.11 KB
+Brain\brain-map.txt                                                       4.01 KB
+Brain\brain.txt                                                           5.18 KB
+Brain\Emotion\Emotion_Reasoning\Emotion_Reasoning.txt                         0 B
 Brain\Emotion\Emotion.txt                                                     0 B
-Brain\Indexes\listing.csv                                                   885 B
-Brain\Indexes\recent.txt                                                    436 B
-Brain\Memory\manifest.csv                                                 1.27 KB
-Brain\Memory\pins.csv                                                     1.23 KB
-Brain\README.txt                                                            605 B
 Brain\Reasoning\Mathematics\time-by-heartbeats.txt                        1.34 KB
 Brain\Reasoning\Programming\Powershell\powershell.txt.txt                     0 B
 Brain\Reasoning\Programming\Programming.txt                                   0 B
 Brain\Reasoning\Reasoning_Emotion\Reasoning_Emotion.txt                       0 B
 Brain\Reasoning\Reasoning.txt                                                 0 B
-component-readmes.txt                                                         2 B
-Heart-Memories\Delora_memory.txt                                            422 B
-Heart-Memories\hb.jsonl                                                      73 B
-Heart-Memories\heart_memories.csv                                         1.23 KB
+Heart-Memories\chat-manifest.csv                                            395 B
+Heart-Memories\chats\J-CHAT-20250820060018.txt                              216 B
 Heart-Memories\heart-memories.txt                                           761 B
-Heart-Memories\janus-memory.txt                                             591 B
-Heart-Memories\llm\20250819-050202.glm-4.5-air.md                         1.66 KB
-Heart-Memories\llm\20250819-050206.qwen2.5_7b.md                          1.63 KB
+Heart-Memories\janus-memory.txt                                           1.17 KB
 Heart-Memories\memory_manifest.csv                                            0 B
-Heart-Memories\pins.csv                                                     397 B
-Heart-Memories\state.json                                                    73 B
-heartbeats.txt                                                            1.46 KB
-state.json                                                                   73 B
-Time\Pulse\pulse-log.jsonl                                               46.34 KB
-Time\Pulse\pulse.json                                                        76 B
+Heart-Memories\pins.csv                                                     945 B
+heartbeats.txt                                                            1.99 KB
+Time\Pulse\pulse-log.jsonl                                                    0 B
+Time\Pulse\pulse.json                                                         3 B
 Time\time.txt                                                                 0 B
-Tools\heartbeat.txt                                                       5.74 KB
-Tools\llm.config.json                                                       231 B
 Tools\Modules\Janus.psm1                                                  2.06 KB
 Tools\Modules\Janus.Tools.psm1                                            3.54 KB
 Tools\Scripts\Add-JanusPin.ps1                                            1.59 KB
-Tools\Scripts\Build-Janus.ps1                                             1.97 KB
+Tools\Scripts\Build-Janus.ps1                                             1.74 KB
 Tools\Scripts\Save-JanusChat.ps1                                          1.64 KB
 Tools\Scripts\Setup-JanusHeart.ps1                                        3.40 KB
+Tools\Scripts\Start-JanusHeartbeatLoop.ps1                                  701 B
 Tools\Scripts\Update-BrainMap.ps1                                         3.34 KB
 Tools\Scripts\Update-JanusCrowns.ps1                                      3.21 KB
-Tools\Scripts\Update-State.ps1                                            1.40 KB
+Tools\Scripts\Update-State.ps1                                            1.41 KB
 Tools\Scripts\Write-JanusMemory.ps1                                       3.72 KB
-Update-ChatHeartbeat.ps1                                                    756 B
 
